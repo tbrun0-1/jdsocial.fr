@@ -3,43 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Community manager freelance à Toulon et dans le Var | Julie Daniaud</title>
-<meta name="description" content="Julie Daniaud, community manager freelance installée à Toulon. Elle accompagne les commerces, associations, PME et collectivités du Var, et se déplace de Marseille à Draguignan.">
+<title>Community manager à Toulon (Var) | JD Social</title>
+<meta name="author" content="Julie Daniaud">
+<meta name="description" content="Community manager freelance à Toulon : gestion des réseaux sociaux, contenus et publicité pour les commerces, PME, associations et collectivités du Var.">
 <meta name="theme-color" content="#FBF5E9">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="JDSOCIALS">
+<meta property="og:site_name" content="JD Social">
 <meta property="og:title" content="Community manager freelance à Toulon et dans le Var">
-<meta property="og:description" content="Julie Daniaud, community manager freelance installée à Toulon. Elle accompagne les commerces, associations, PME et collectivités du Var, et se déplace de Marseille à Draguignan.">
-<meta property="og:image" content="https://jdsocial.fr/og-image.jpg">
+<meta property="og:description" content="Julie Daniaud, community manager installée à Toulon. Déplacements dans tout le Var, de Six-Fours à Hyères, et jusqu'à Marseille et Draguignan.">
+<meta property="og:image" content="https://jdsocial.fr/julie-daniaud.webp">
+<meta property="og:image:alt" content="Julie Daniaud, community manager freelance à Toulon">
 <meta property="og:url" content="https://jdsocial.fr/community-manager-toulon.html">
 <link rel="canonical" href="https://jdsocial.fr/community-manager-toulon.html">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "name":"Community management à Toulon et dans le Var",
-  "serviceType":"Community management",
-  "description":"Gestion des réseaux sociaux pour les commerces, associations, PME et collectivités de Toulon et du Var.",
-  "url":"https://jdsocial.fr/community-manager-toulon.html",
-  "provider":{
-    "@type":"ProfessionalService",
-    "name":"JD Social Media",
-    "url":"https://jdsocial.fr/",
-    "founder":{"@type":"Person","@id":"https://jdsocial.fr/#julie","name":"Julie Daniaud"},
-    "address":{"@type":"PostalAddress","addressLocality":"Toulon","postalCode":"83000","addressRegion":"Var","addressCountry":"FR"}
-  },
-  "areaServed":[
-    {"@type":"City","name":"Toulon"},{"@type":"City","name":"La Garde"},
-    {"@type":"City","name":"La Valette-du-Var"},{"@type":"City","name":"Ollioules"},
-    {"@type":"City","name":"Six-Fours-les-Plages"},{"@type":"City","name":"La Seyne-sur-Mer"},
-    {"@type":"City","name":"Hyères"},{"@type":"City","name":"Saint-Cyr-sur-Mer"},
-    {"@type":"City","name":"Draguignan"},{"@type":"City","name":"Marseille"},
-    {"@type":"AdministrativeArea","name":"Var"}
-  ]
-}
-</script>
+<meta name="twitter:title" content="Community manager freelance à Toulon et dans le Var">
+<meta name="twitter:description" content="Julie Daniaud, community manager installée à Toulon. Déplacements dans tout le Var, de Six-Fours à Hyères, et jusqu'à Marseille et Draguignan.">
+<meta name="twitter:image" content="https://jdsocial.fr/julie-daniaud.webp">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="/favicon-32.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -177,13 +157,489 @@
   body.bloque{overflow:hidden;}
   @media (max-width:900px){ .burger{display:block;} .bar > .btn{display:none;} .bar{grid-template-columns:auto 1fr;} }
 
+  /* ---------- fil d'ariane ---------- */
+  .ariane{font-size:13.5px; color:var(--ink-soft); margin:0 0 20px;}
+  .ariane a{color:var(--ink-soft);}
+  .ariane .sep{opacity:.45; margin:0 7px;}
+  .ariane [aria-current]{color:var(--ink); font-weight:500;}
+
+  /* ---------- portrait ---------- */
+  .portrait-bloc{display:grid; grid-template-columns:.44fr 1fr; gap:clamp(20px,4vw,38px);
+    align-items:center; margin:34px 0 6px;}
+  @media (max-width:700px){ .portrait-bloc{grid-template-columns:1fr;} }
+  .portrait-bloc img{display:block; width:100%; height:auto; border:1.5px solid var(--ink);
+    box-shadow:6px 6px 0 var(--ink); border-radius:150px 150px 22px 22px; rotate:-1.2deg;}
+  .portrait-bloc p{margin:0 0 12px;}
+
+  /* ---------- prestations ---------- */
+  .presta{list-style:none; padding:0; margin:24px 0 0; display:grid; gap:12px;}
+  .presta li{border:1.5px solid var(--ink); border-radius:18px; background:var(--paper);
+    padding:15px 20px; box-shadow:3px 3px 0 var(--ink);}
+  .presta b{display:block; font-size:16.5px; margin-bottom:5px;}
+  .presta span{color:var(--ink-soft); font-size:15.5px;}
+
+  /* ---------- temoignage ---------- */
+  .temoignage{border:1.5px solid var(--ink); border-radius:24px; background:var(--blush);
+    padding:clamp(22px,4vw,34px); margin:34px 0; box-shadow:5px 5px 0 var(--ink);}
+  .temoignage blockquote{margin:0; font-family:var(--serif); font-size:clamp(20px,2.6vw,27px);
+    font-style:italic; font-weight:300; line-height:1.2; letter-spacing:-.02em;}
+  .temoignage .qui{margin:16px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .temoignage .qui b{color:var(--ink);}
+
+  /* ---------- questions frequentes ---------- */
+  .faq{padding-block:clamp(30px,5vw,52px) 0;}
+  details{border:1.5px solid var(--ink); border-radius:20px; background:var(--paper);
+    padding:16px 20px; margin-bottom:12px; box-shadow:3px 3px 0 var(--ink);}
+  details[open]{background:var(--sage-pale);}
+  summary{font-weight:700; font-size:16.5px; list-style:none; display:flex;
+    justify-content:space-between; gap:14px; cursor:var(--cur-act);}
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+"; font-family:var(--serif); font-size:24px; line-height:1;}
+  details[open] summary::after{content:"–";}
+  details p{margin-top:12px; font-size:15.5px; color:var(--ink-soft);}
+
+  /* ---------- appel a l'action final ---------- */
+  .final{margin:clamp(40px,6vw,72px) 0 0; padding:clamp(30px,5vw,52px);
+    background:var(--green); color:var(--cream); border-radius:30px;}
+  .final h2{color:var(--cream); margin-bottom:14px;}
+  .final p{color:#DCE6CB; max-width:52ch; margin-bottom:24px;}
+  .final .btn{background:var(--lime); color:var(--ink);}
+  .final .btn:hover{background:var(--sage);}
+
   @media (prefers-reduced-motion:reduce){ *{transition:none !important;} html{scroll-behavior:auto;} }
-</style><body>
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "ProfessionalService",
+    "Organization"
+   ],
+   "@id": "https://jdsocial.fr/#organisation",
+   "name": "JD Social",
+   "alternateName": [
+    "JD Social Media",
+    "JDSOCIALS"
+   ],
+   "url": "https://jdsocial.fr/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://jdsocial.fr/logo-jd.png"
+   },
+   "email": "juliedaniaud.pro@gmail.com",
+   "founder": {
+    "@id": "https://jdsocial.fr/#julie"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Toulon",
+    "postalCode": "83000",
+    "addressRegion": "Var",
+    "addressCountry": "FR"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Toulon"
+    },
+    {
+     "@type": "City",
+     "name": "La Garde"
+    },
+    {
+     "@type": "City",
+     "name": "La Valette-du-Var"
+    },
+    {
+     "@type": "City",
+     "name": "Le Pradet"
+    },
+    {
+     "@type": "City",
+     "name": "Ollioules"
+    },
+    {
+     "@type": "City",
+     "name": "Six-Fours-les-Plages"
+    },
+    {
+     "@type": "City",
+     "name": "La Seyne-sur-Mer"
+    },
+    {
+     "@type": "City",
+     "name": "Sanary-sur-Mer"
+    },
+    {
+     "@type": "City",
+     "name": "Hyères"
+    },
+    {
+     "@type": "City",
+     "name": "Saint-Cyr-sur-Mer"
+    },
+    {
+     "@type": "City",
+     "name": "Draguignan"
+    },
+    {
+     "@type": "City",
+     "name": "Marseille"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Var"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Provence-Alpes-Côte d'Azur"
+    },
+    {
+     "@type": "Country",
+     "name": "France"
+    }
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/in/julie-daniaud"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://jdsocial.fr/#julie",
+   "name": "Julie Daniaud",
+   "givenName": "Julie",
+   "familyName": "Daniaud",
+   "jobTitle": "Community manager freelance",
+   "description": "Julie Daniaud est la fondatrice de JD Social, une activité de community management freelance basée à Toulon, dans le Var. Elle accompagne entreprises, associations et institutions sur leurs réseaux sociaux depuis 2018, et à son compte depuis 2024.",
+   "url": "https://jdsocial.fr/",
+   "mainEntityOfPage": {
+    "@id": "https://jdsocial.fr/#webpage"
+   },
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://jdsocial.fr/julie-daniaud.webp",
+    "width": 880,
+    "height": 1173
+   },
+   "email": "juliedaniaud.pro@gmail.com",
+   "worksFor": {
+    "@id": "https://jdsocial.fr/#organisation"
+   },
+   "homeLocation": {
+    "@type": "Place",
+    "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Toulon",
+     "postalCode": "83000",
+     "addressRegion": "Var",
+     "addressCountry": "FR"
+    }
+   },
+   "workLocation": {
+    "@type": "Place",
+    "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Toulon",
+     "postalCode": "83000",
+     "addressRegion": "Var",
+     "addressCountry": "FR"
+    }
+   },
+   "knowsAbout": [
+    "Community management",
+    "Réseaux sociaux",
+    "Stratégie éditoriale",
+    "Publicité Meta",
+    "Instagram",
+    "LinkedIn",
+    "Facebook",
+    "Formation aux réseaux sociaux"
+   ],
+   "knowsLanguage": [
+    {
+     "@type": "Language",
+     "name": "Français"
+    }
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/in/julie-daniaud"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://jdsocial.fr/#site",
+   "url": "https://jdsocial.fr/",
+   "name": "JD Social",
+   "alternateName": [
+    "JD Social Media",
+    "JDSOCIALS"
+   ],
+   "inLanguage": "fr-FR",
+   "description": "Site de JD Social, community manager freelance à Toulon (Var).",
+   "publisher": {
+    "@id": "https://jdsocial.fr/#organisation"
+   }
+  },
+  {
+   "@type": [
+    "WebPage",
+    "FAQPage"
+   ],
+   "@id": "https://jdsocial.fr/community-manager-toulon.html#webpage",
+   "url": "https://jdsocial.fr/community-manager-toulon.html",
+   "name": "Community manager à Toulon (Var) | JD Social",
+   "description": "Community manager freelance à Toulon : gestion des réseaux sociaux, contenus et publicité pour les commerces, PME, associations et collectivités du Var.",
+   "inLanguage": "fr-FR",
+   "isPartOf": {
+    "@id": "https://jdsocial.fr/#site"
+   },
+   "about": {
+    "@id": "https://jdsocial.fr/#organisation"
+   },
+   "publisher": {
+    "@id": "https://jdsocial.fr/#organisation"
+   },
+   "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://jdsocial.fr/julie-daniaud.webp"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Combien coûte un community manager à Toulon ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Chez moi, la production de contenus démarre à 450 € HT par mois et l'accompagnement complet à 690 € HT par mois. Une mission de stratégie seule est à 980 € HT. Le prix dépend du nombre de réseaux, du volume de publications et du temps de tournage. Le détail figure sur la page tarifs ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quelle différence entre community manager et social media manager ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Dans les grandes structures, le social media manager définit la stratégie et le community manager l'exécute et anime la communauté au quotidien. Dans une PME ou une association, c'est la même personne, et c'est ce que je fais : je construis la ligne éditoriale, je produis, je publie et je rends compte des résultats."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Travaillez-vous avec des structures situées hors du Var ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oui. Une partie de mes clients est ailleurs en France et tout se passe à distance : la stratégie, la production écrite, le pilotage des campagnes et le suivi des chiffres fonctionnent très bien en visio. La proximité change surtout quelque chose pour la production d'images et pour la formation en présentiel."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Vous déplacez-vous pour les prises de vue ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oui, dans toute l'agglomération toulonnaise (La Garde, La Valette-du-Var, Ollioules, Six-Fours-les-Plages, La Seyne-sur-Mer, Le Pradet, Hyères) et jusqu'à Saint-Cyr-sur-Mer, Draguignan et Marseille. C'est même la première raison de travailler avec quelqu'un d'installé ici."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Faut-il être présent sur tous les réseaux sociaux ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Non, et c'est souvent la première chose que je déconseille. Deux réseaux tenus correctement valent mieux que cinq comptes à l'abandon. Le choix dépend de vos clients et de vos objectifs, et se décide au premier rendez-vous. J'ai détaillé le raisonnement dans un article sur le choix entre Facebook et LinkedIn ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Gérez-vous aussi la publicité Instagram et Facebook ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oui. Je conçois les visuels et les textes d'annonces, je règle le ciblage, je suis la campagne pendant sa diffusion et je vous rends un bilan chiffré. Le budget média est versé directement par vous à Meta, ce qui vous en laisse la maîtrise à tout moment."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Peut-on simplement se faire former pour gérer ses réseaux soi-même ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oui, c'est une demande fréquente, en particulier chez les associations et les commerces. Une journée de formation pour vous ou votre équipe : prise en main des outils, création de contenus, planification et lecture des statistiques. À la fin, vous gérez votre page sans moi."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "En combien de temps voit-on des résultats ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Les premiers signaux (portée, engagement, qualité des échanges) bougent en quelques semaines. Pour une croissance lisible de la communauté et des demandes entrantes, il faut compter plusieurs mois de publication régulière. C'est la raison pour laquelle l'accompagnement mensuel se cale sur trois mois minimum."
+     }
+    }
+   ],
+   "breadcrumb": {
+    "@id": "https://jdsocial.fr/community-manager-toulon.html#fildariane"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://jdsocial.fr/community-manager-toulon.html#service",
+   "name": "Community management à Toulon et dans le Var",
+   "serviceType": "Community management",
+   "alternateName": [
+    "Gestion des réseaux sociaux à Toulon",
+    "Social media management dans le Var"
+   ],
+   "description": "Gestion des réseaux sociaux pour les commerces, associations, PME, professions libérales et collectivités de Toulon et du Var : stratégie, création de contenus, publicité, analyse et formation.",
+   "url": "https://jdsocial.fr/community-manager-toulon.html",
+   "provider": {
+    "@id": "https://jdsocial.fr/#organisation"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Toulon"
+    },
+    {
+     "@type": "City",
+     "name": "La Garde"
+    },
+    {
+     "@type": "City",
+     "name": "La Valette-du-Var"
+    },
+    {
+     "@type": "City",
+     "name": "Le Pradet"
+    },
+    {
+     "@type": "City",
+     "name": "Ollioules"
+    },
+    {
+     "@type": "City",
+     "name": "Six-Fours-les-Plages"
+    },
+    {
+     "@type": "City",
+     "name": "La Seyne-sur-Mer"
+    },
+    {
+     "@type": "City",
+     "name": "Sanary-sur-Mer"
+    },
+    {
+     "@type": "City",
+     "name": "Hyères"
+    },
+    {
+     "@type": "City",
+     "name": "Saint-Cyr-sur-Mer"
+    },
+    {
+     "@type": "City",
+     "name": "Draguignan"
+    },
+    {
+     "@type": "City",
+     "name": "Marseille"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Var"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Provence-Alpes-Côte d'Azur"
+    },
+    {
+     "@type": "Country",
+     "name": "France"
+    }
+   ],
+   "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://jdsocial.fr/community-manager-toulon.html",
+    "availableLanguage": {
+     "@type": "Language",
+     "name": "Français"
+    }
+   },
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Prestations",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Stratégie et gestion des réseaux sociaux"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Création de contenus"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Publicité et sponsorisation sur les réseaux sociaux"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Analyse des données et reporting"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Conseils et audit des réseaux sociaux"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Formation aux réseaux sociaux"
+      }
+     }
+    ]
+   },
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Commerces, associations, PME, professions libérales et collectivités du Var"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://jdsocial.fr/community-manager-toulon.html#fildariane",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Accueil",
+     "item": "https://jdsocial.fr/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Community manager à Toulon",
+     "item": "https://jdsocial.fr/community-manager-toulon.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
 
 <header>
   <div class="wrap">
     <div class="bar">
-      <a class="mark" href="/">JD Social Media</a>
+      <a class="mark" href="/">JD Social</a>
       <nav aria-label="Navigation principale">
         <a href="/#travaux">Réalisations</a>
         <a href="/#savoirfaire">Ce que je sais faire</a>
@@ -218,7 +674,9 @@
 
 <div class="wrap entete">
   <div class="lisible">
-    <a class="fil" href="/">← Accueil</a>
+    <nav class="ariane" aria-label="Fil d'Ariane">
+      <a href="/">Accueil</a><span class="sep">/</span><span aria-current="page">Community manager à Toulon</span>
+    </nav>
     <h1>Community manager freelance à Toulon</h1>
     <p class="meta">Julie Daniaud, installée à Toulon (Var)</p>
   </div>
@@ -227,7 +685,15 @@
 <article class="wrap">
   <div class="lisible">
 
-    <p class="chapo">Je suis community manager freelance et je vis à Toulon. Huit ans de métier sur des comptes exigeants, dont deux à mon compte, et la possibilité de venir chez vous plutôt que de tout traiter par écran interposé. Voici comment je travaille avec les structures du Var.</p>
+    <p class="chapo">Je m'appelle Julie Daniaud, je suis community manager freelance et je vis à Toulon. Huit ans de métier sur des comptes exigeants, dont deux à mon compte, et la possibilité de venir chez vous plutôt que de tout traiter par écran interposé. Voici comment je travaille avec les structures du Var.</p>
+
+    <div class="portrait-bloc">
+      <img src="/julie-daniaud.webp" alt="Julie Daniaud, community manager freelance à Toulon" width="880" height="1173" loading="lazy" decoding="async">
+      <div>
+        <p>Sous la marque <strong>JD Social</strong>, j'accompagne des commerces, des associations, des PME et des structures publiques sur leurs réseaux sociaux : Instagram, Facebook et LinkedIn principalement.</p>
+        <p>Huit ans de social media, dont deux à mon compte, sur des comptes nationaux et internationaux. Aujourd'hui je travaille depuis Toulon, avec des clients dans le Var et ailleurs en France.</p>
+      </div>
+    </div>
 
     <h2>Travailler avec quelqu'un qui est sur place</h2>
     <p>La plupart des community managers travaillent à distance, et pour une bonne partie du métier c'est très bien : écrire, programmer, régler une campagne, lire des statistiques, tout cela se fait aussi bien à huit cents kilomètres qu'à huit.</p>
@@ -245,9 +711,26 @@
     <p>Une collectivité ou un service public doit informer sans ennuyer, dans un cadre de validation serré. C'est exactement le type de contrainte avec lequel j'ai l'habitude de composer.</p>
     <p>Une profession libérale, enfin, a surtout besoin d'exister sur LinkedIn de façon crédible, sans y passer ses soirées.</p>
 
+    <h2>Les prestations, dans le détail</h2>
+    <p>Six façons de travailler ensemble, à prendre séparément ou dans le cadre d'un accompagnement mensuel.</p>
+    <ul class="presta">
+      <li><b>Stratégie et gestion des réseaux sociaux</b><span>Ligne éditoriale, cibles, choix des plateformes et calendrier, puis la gestion au quotidien de vos comptes Instagram, Facebook et LinkedIn.</span></li>
+      <li><b>Création de contenus</b><span>Photos, vidéos montées, carrousels, stories et légendes, produits à partir de votre charte visuelle. C'est là que le déplacement sur site compte le plus.</span></li>
+      <li><b>Publicité et sponsorisation</b><span>Campagnes Meta Ads : visuels, textes d'annonces, ciblage, optimisation en cours de route et bilan chiffré. Le budget média reste payé directement par vous.</span></li>
+      <li><b>Analyse des données</b><span>Engagement, portée, croissance de la communauté, trafic et conversions, dans un rapport écrit et un point de bilan à intervalle fixe.</span></li>
+      <li><b>Conseils et audit</b><span>Un état des lieux ponctuel de vos pages, de votre ligne éditoriale et de vos campagnes, avec un benchmark de votre secteur.</span></li>
+      <li><b>Formation à l'autonomie</b><span>Une journée pour vous ou votre équipe : prise en main des outils, création de contenus, planification et lecture des statistiques.</span></li>
+    </ul>
+    <p style="margin-top:20px;">Le détail de chaque prestation est présenté sur la <a href="/#savoirfaire">page d'accueil</a>, et les formats de facturation sur la <a href="/tarifs.html">page tarifs</a>.</p>
+
     <h2>Huit ans sur des comptes exigeants</h2>
     <p>J'ai géré des comptes nationaux et internationaux : un éco-organisme chargé de la collecte des piles, une marque de textile connecté, une fédération d'enseignants présente sur cinq continents, et le service public du conseil en évolution professionnelle, qui est mon client actuel.</p>
     <p>Ce que ça vous apporte concrètement : l'habitude des sujets difficiles à rendre clairs, la rigueur d'une ligne éditoriale tenue sur des mois, et l'obligation de rendre des comptes chiffrés à chaque bilan. Ce sont des réflexes qui viennent des grands comptes et qui servent tout autant à un commerce de quinze salariés. <a href="/#travaux">Voir le détail de ces missions</a>.</p>
+
+    <div class="temoignage">
+      <blockquote>«&nbsp;Elle a su s'adapter à nos contraintes institutionnelles tout en apportant une vraie fraîcheur éditoriale.&nbsp;»</blockquote>
+      <p class="qui"><b>Mon CEP</b>, service public du conseil en évolution professionnelle</p>
+    </div>
 
     <h2>Comment se passe un premier rendez-vous</h2>
     <p>Une demi-heure, chez vous si vous êtes dans la zone, en visio sinon. Vous me racontez où vous en êtes, ce que vous avez déjà essayé et ce qui vous bloque. Je regarde vos comptes avant de venir, donc je n'arrive pas les mains vides.</p>
@@ -262,6 +745,50 @@
 
 <div class="wrap faq">
   <div class="lisible">
+    <h2>Questions fréquentes</h2>
+
+    <details>
+      <summary>Combien coûte un community manager à Toulon ?</summary>
+      <p>Chez moi, la production de contenus démarre à 450 € HT par mois et l'accompagnement complet à 690 € HT par mois. Une mission de stratégie seule est à 980 € HT. Le prix dépend du nombre de réseaux, du volume de publications et du temps de tournage. Le détail figure sur la <a href="/tarifs.html">page tarifs</a>.</p>
+    </details>
+
+    <details>
+      <summary>Quelle différence entre community manager et social media manager ?</summary>
+      <p>Dans les grandes structures, le social media manager définit la stratégie et le community manager l'exécute et anime la communauté au quotidien. Dans une PME ou une association, c'est la même personne, et c'est ce que je fais : je construis la ligne éditoriale, je produis, je publie et je rends compte des résultats.</p>
+    </details>
+
+    <details>
+      <summary>Travaillez-vous avec des structures situées hors du Var ?</summary>
+      <p>Oui. Une partie de mes clients est ailleurs en France et tout se passe à distance : la stratégie, la production écrite, le pilotage des campagnes et le suivi des chiffres fonctionnent très bien en visio. La proximité change surtout quelque chose pour la production d'images et pour la formation en présentiel.</p>
+    </details>
+
+    <details>
+      <summary>Vous déplacez-vous pour les prises de vue ?</summary>
+      <p>Oui, dans toute l'agglomération toulonnaise (La Garde, La Valette-du-Var, Ollioules, Six-Fours-les-Plages, La Seyne-sur-Mer, Le Pradet, Hyères) et jusqu'à Saint-Cyr-sur-Mer, Draguignan et Marseille. C'est même la première raison de travailler avec quelqu'un d'installé ici.</p>
+    </details>
+
+    <details>
+      <summary>Faut-il être présent sur tous les réseaux sociaux ?</summary>
+      <p>Non, et c'est souvent la première chose que je déconseille. Deux réseaux tenus correctement valent mieux que cinq comptes à l'abandon. Le choix dépend de vos clients et de vos objectifs, et se décide au premier rendez-vous. J'ai détaillé le raisonnement dans un article sur le <a href="/facebook-ou-linkedin.html">choix entre Facebook et LinkedIn</a>.</p>
+    </details>
+
+    <details>
+      <summary>Gérez-vous aussi la publicité Instagram et Facebook ?</summary>
+      <p>Oui. Je conçois les visuels et les textes d'annonces, je règle le ciblage, je suis la campagne pendant sa diffusion et je vous rends un bilan chiffré. Le budget média est versé directement par vous à Meta, ce qui vous en laisse la maîtrise à tout moment.</p>
+    </details>
+
+    <details>
+      <summary>Peut-on simplement se faire former pour gérer ses réseaux soi-même ?</summary>
+      <p>Oui, c'est une demande fréquente, en particulier chez les associations et les commerces. Une journée de formation pour vous ou votre équipe : prise en main des outils, création de contenus, planification et lecture des statistiques. À la fin, vous gérez votre page sans moi.</p>
+    </details>
+
+    <details>
+      <summary>En combien de temps voit-on des résultats ?</summary>
+      <p>Les premiers signaux (portée, engagement, qualité des échanges) bougent en quelques semaines. Pour une croissance lisible de la communauté et des demandes entrantes, il faut compter plusieurs mois de publication régulière. C'est la raison pour laquelle l'accompagnement mensuel se cale sur trois mois minimum.</p>
+    </details>
+
+    <p style="margin-top:26px; color:var(--ink-soft); font-size:15.5px;">Pour aller plus loin : <a href="/reseaux-sociaux-essentiels-pme.html">ce que les réseaux sociaux apportent à une PME</a>, <a href="/5-erreurs-frequentes-reseaux-sociaux.html">les erreurs qui freinent la visibilité</a> et <a href="/une-semaine-community-manager-freelance.html">à quoi ressemble une semaine de travail</a>.</p>
+
     <div class="final">
       <h2>On en parle ?</h2>
       <p>Trente minutes suffisent pour savoir ce qui est réaliste chez vous, et à quel rythme. Sur place à Toulon et dans le Var, ou à distance.</p>
@@ -271,8 +798,8 @@
 </div>
 <footer>
   <div class="wrap foot">
-    <a class="mark" href="/">JD Social Media</a>
-    <span>© 2026 JD Social Media, SIRET 933 905 291 00029, <a href="/mentions-legales.html">mentions légales</a></span>
+    <a class="mark" href="/">JD Social</a>
+    <span>© 2026 JD Social, community manager à Toulon (Var), SIRET 933 905 291 00029, <a href="/mentions-legales.html">mentions légales</a></span>
   </div>
 </footer>
 

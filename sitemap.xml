@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://jdsocial.fr/</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://jdsocial.fr/tarifs.html</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url>
+    <loc>https://jdsocial.fr/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
   <url>
     <loc>https://jdsocial.fr/community-manager-toulon.html</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-09-07</lastmod>
   </url>
-  <url><loc>https://jdsocial.fr/une-semaine-community-manager-freelance.html</loc><lastmod>2026-08-28</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://jdsocial.fr/facebook-ou-linkedin.html</loc><lastmod>2026-07-03</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://jdsocial.fr/5-erreurs-frequentes-reseaux-sociaux.html</loc><lastmod>2026-05-22</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://jdsocial.fr/reseaux-sociaux-essentiels-pme.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url>
+    <loc>https://jdsocial.fr/tarifs.html</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://jdsocial.fr/une-semaine-community-manager-freelance.html</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://jdsocial.fr/facebook-ou-linkedin.html</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://jdsocial.fr/5-erreurs-frequentes-reseaux-sociaux.html</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://jdsocial.fr/reseaux-sociaux-essentiels-pme.html</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
 </urlset>
