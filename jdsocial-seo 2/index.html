@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JD Social | Julie Daniaud, community manager à Toulon</title>
+<meta name="author" content="Julie Daniaud">
+<meta name="description" content="Julie Daniaud, community manager freelance à Toulon (Var) : stratégie, contenus, publicité et formation. Huit ans de métier, premier échange gratuit.">
+<meta name="theme-color" content="#FBF5E9">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="JD Social">
+<meta property="og:title" content="JD Social, community manager freelance à Toulon (Var)">
+<meta property="og:description" content="Julie Daniaud accompagne les entreprises, associations et institutions sur leurs réseaux sociaux, depuis Toulon et partout en France.">
+<meta property="og:image" content="https://jdsocial.fr/og-image.jpg">
+<meta property="og:image:alt" content="JD Social, community manager freelance à Toulon">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://jdsocial.fr/">
+<link rel="canonical" href="https://jdsocial.fr/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JD Social, community manager freelance à Toulon (Var)">
+<meta name="twitter:description" content="Julie Daniaud accompagne les entreprises, associations et institutions sur leurs réseaux sociaux, depuis Toulon et partout en France.">
+<meta name="twitter:image" content="https://jdsocial.fr/og-image.jpg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+<style>
+  :root{
+    color-scheme:light;
+
+    --cream:#FBF5E9;
+    --cream-deep:#F4ECD8;
+    --paper:#FFFDF7;
+    --ink:#22301A;
+    --ink-soft:#5E6B4E;
+    --line:#E3DAC4;
+
+    --green:#3E5A2B;
+    --green-hi:#4E7136;
+    --sage:#C6D8A4;
+    --sage-pale:#E9F0D8;
+    --lime:#DCEE5F;
+    --blush:#F7DFCF;
+
+    --serif:"Fraunces", Georgia, serif;
+    --sans:"DM Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+
+    --maxw:1180px;
+    --gutter:clamp(18px,4vw,44px);
+
+    --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+
+    --logo-jd:url("/logo-jd.png");
+    --photo-julie:url("/julie-daniaud.webp");
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth; background:var(--ink);
+    overflow-x:hidden; overscroll-behavior:none;}
+  main[id], section[id], div[id]{scroll-margin-top:104px;}
+  body{
+    margin:0; background:var(--cream); min-height:100%; color:var(--ink);
+    font-family:var(--sans); font-size:16.5px; line-height:1.6;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  body::after{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:60;
+    background-image:var(--grain); opacity:.28; mix-blend-mode:multiply;
+  }
+  img{display:block; width:100%; height:100%; object-fit:cover;}
+  a{color:inherit;}
+  p{margin:0;}
+  :focus-visible{outline:3px solid var(--green); outline-offset:3px; border-radius:6px;}
+  .wrap{max-width:var(--maxw); margin-inline:auto; padding-inline:var(--gutter);}
+  .sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0);}
+
+  /* ---------- type ---------- */
+  h1,h2,h3{margin:0; font-family:var(--serif); font-variation-settings:"SOFT" 30,"WONK" 1; text-wrap:balance;}
+  h1{font-size:clamp(48px,8.4vw,106px); line-height:.94; font-weight:700; letter-spacing:-.035em;}
+  h2{font-size:clamp(34px,5.6vw,68px); line-height:.98; font-weight:700; letter-spacing:-.03em;}
+  h3{font-family:var(--sans); font-size:19px; font-weight:700; letter-spacing:-.015em; line-height:1.25;}
+  .lede{color:var(--ink-soft); font-size:clamp(16.5px,1.35vw,19px); max-width:46ch;}
+
+  /* ---------- nav ---------- */
+  header{position:sticky; top:0; z-index:50;}
+  header::before{
+    content:""; position:absolute; inset:0 calc(50% - 50vw); z-index:-1;
+    background:linear-gradient(var(--cream) 40%, rgba(251,245,233,.86) 72%, transparent);
+    backdrop-filter:blur(8px); opacity:0; transition:opacity .3s;
+  }
+  header.pose::before{opacity:1;}
+  .bar{
+    display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:16px;
+    padding:14px 0 16px;
+  }
+  .bar > .btn{justify-self:end;}
+  .mark{
+    display:block; width:58px; height:52px; flex:none; text-indent:-9999px; overflow:hidden;
+    background:var(--logo-jd) left center/contain no-repeat; text-decoration:none;
+  }
+  .bar nav{display:flex; gap:2px; justify-content:center;}
+  .bar nav a{
+    font-size:14.5px; font-weight:500; text-decoration:none; color:var(--ink);
+    padding:9px 15px; border-radius:100px; transition:background .18s, color .18s;
+  }
+  .bar nav a{position:relative;}
+  .bar nav a::after{content:""; position:absolute; left:15px; right:15px; bottom:4px; height:2px;
+    background:var(--ink); border-radius:2px; transform:scaleX(0); transform-origin:left; transition:transform .22s;}
+  .bar nav a:hover{background:transparent;}
+  .bar nav a:hover::after{transform:scaleX(1);}
+  @media (max-width:900px){ .bar nav{display:none;} .bar > .btn{display:none;} .bar{grid-template-columns:auto 1fr;} }
+
+  .btn{
+    display:inline-flex; align-items:center; gap:9px;
+    justify-content:center; font-family:var(--sans); font-size:15px; font-weight:700;
+    line-height:1.15; text-decoration:none; text-align:center;
+    padding:14px 28px 15px; border-radius:100px; border:1.5px solid var(--ink);
+    background:var(--green); color:var(--cream);
+    box-shadow:3px 3px 0 var(--ink);
+    transition:transform .12s, box-shadow .12s, background .2s;
+  }
+  .btn:hover{transform:translate(-2px,-2px); box-shadow:5px 5px 0 var(--ink); background:var(--green-hi);}
+  .btn:active{transform:translate(2px,2px); box-shadow:1px 1px 0 var(--ink);}
+  .btn--lime{background:var(--lime); color:var(--ink);}
+  .btn--lime:hover{background:var(--sage);}
+  .btn--sm{padding:11px 21px 12px; font-size:14px; box-shadow:2px 2px 0 var(--ink);}
+
+  /* ---------- hero ---------- */
+  .hero{padding-block:clamp(40px,7vw,80px) clamp(48px,7vw,90px);}
+  .hero__grid{display:grid; grid-template-columns:1.06fr .94fr; gap:clamp(30px,5vw,70px); align-items:center;}
+  @media (max-width:900px){ .hero__grid{grid-template-columns:1fr;} }
+  h1 .l2{display:block; margin-left:.18em; font-style:italic; font-weight:300; color:var(--green);}
+  h1 .l3{display:block; font-size:.62em; letter-spacing:-.02em;}
+  .etiquette{display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; padding:8px 16px; margin:0 0 20px;
+    border:1.5px solid var(--ink); border-radius:100px; background:var(--lime);}
+  .hero .lede{margin:26px 0 30px;}
+  .cta{display:flex; flex-wrap:wrap; gap:12px;}
+  .squiggle{display:block; width:min(280px,60%); margin-top:26px; color:var(--green);}
+
+  /* phone */
+  .phone{
+    position:relative; width:min(342px,88vw); margin-inline:auto;
+    border:1.5px solid var(--ink); border-radius:42px; background:var(--paper);
+    padding:10px; box-shadow:7px 7px 0 var(--ink); rotate:-2.5deg;
+  }
+  .screen{
+    border:1.5px solid var(--ink); border-radius:32px; overflow:hidden;
+    background:#FFFFFF; min-height:566px; display:flex; flex-direction:column;
+  }
+  .ui{display:flex; flex-direction:column; flex:1; font-size:12.5px; line-height:1.38; color:#151A11; animation:fondu .4s ease;}
+  @keyframes fondu{from{opacity:0;} to{opacity:1;}}
+  .ui svg{width:18px; height:18px; flex:none; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round;}
+  .ui--li{background:#F1EFE9;}
+  .ui--fb{background:#EEF0F2;}
+  .statut{display:flex; justify-content:space-between; align-items:center; padding:9px 16px 3px; font-size:10.5px; font-weight:700;}
+  .statut i{display:inline-block; width:17px; height:9px; border:1.2px solid currentColor; border-radius:2.5px; position:relative; font-style:normal;}
+  .statut i::after{content:""; position:absolute; top:1.5px; bottom:1.5px; left:1.5px; right:6px; background:currentColor; border-radius:1px;}
+  .apptop{display:flex; align-items:center; gap:10px; padding:8px 13px 10px; background:#fff; border-bottom:1px solid rgba(21,26,17,.09);}
+  .apptop .logo{font-weight:700; font-size:15.5px; letter-spacing:-.03em;}
+  .apptop .ic{display:flex; gap:13px; margin-left:auto;}
+  .apptop .cherche{flex:1; background:rgba(21,26,17,.06); border-radius:100px; padding:6px 12px; font-size:11.5px; color:#7A8271;}
+  .fcard{background:#fff; padding-bottom:2px;}
+  .ui--li .fcard, .ui--fb .fcard{margin-top:8px; border-block:1px solid rgba(21,26,17,.08);}
+  .ptop{display:flex; align-items:center; gap:9px; padding:11px 13px 9px;}
+  .av{width:36px; height:36px; flex:none; border-radius:50%; border:1.5px solid var(--ink);
+    display:grid; place-content:center; font-family:var(--serif); font-weight:700; font-size:16px; color:var(--ink);}
+  .av--sage{background:var(--sage);} .av--blush{background:var(--blush);} .av--lime{background:var(--lime);}
+  .av--sm{width:28px; height:28px; font-size:13px;}
+  .pname{font-weight:700; font-size:12.5px; line-height:1.25;}
+  .psub{display:flex; align-items:center; gap:5px; font-size:11px; color:#6E7663; line-height:1.3;}
+  .psub svg{width:11px; height:11px; stroke-width:2;}
+  .ptop .more{margin-left:auto; opacity:.6;}
+  .ptxt{padding:0 13px 10px; font-size:12.5px;}
+  .ptxt span{color:#7A8271;}
+  .media{position:relative; aspect-ratio:4/5; background:var(--cream-deep);}
+  .ui--li .media, .ui--fb .media{aspect-ratio:1.91/1;}
+  .media img{position:absolute; inset:0;}
+  .acts{display:flex; align-items:center; gap:15px; padding:10px 13px 5px;}
+  .acts .right{margin-left:auto;}
+  .reacts{display:flex; align-items:center; gap:7px; padding:7px 13px; font-size:11px; color:#6E7663;}
+  .reacts .cnt{margin-left:auto;}
+  .puces{display:flex;}
+  .puces b{width:17px; height:17px; border-radius:50%; display:grid; place-content:center; font-size:9px; color:#fff; border:1.5px solid #fff; margin-left:-5px;}
+  .puces b:first-child{margin-left:0;}
+  .bleu{background:#2E6BC4;} .rouge{background:#C4452E;}
+  .barre{display:flex; border-top:1px solid rgba(21,26,17,.1); margin:2px 8px 0;}
+  .barre span{flex:1; display:flex; align-items:center; justify-content:center; gap:6px; padding:9px 2px; font-size:11px; font-weight:600; color:#4E5645;}
+  .barre svg{width:15px; height:15px;}
+  .capt{padding:3px 13px 11px; font-size:12.5px;}
+  .capt b{font-weight:700;}
+  .capt em{display:block; font-style:normal; color:#8C9382; font-size:10.5px; letter-spacing:.04em; text-transform:uppercase; margin-top:6px;}
+  .tabbar{margin-top:auto; display:flex; justify-content:space-around; align-items:center; padding:11px 10px 13px; background:#fff; border-top:1px solid rgba(21,26,17,.12);}
+  .tabbar svg{opacity:.42;}
+  .tabbar .actif{opacity:1;}
+  .colonne-phone{display:flex; flex-direction:column; align-items:center; padding-left:clamp(0px,3vw,34px);}
+  .dots{display:flex; gap:2px; justify-content:center; padding:14px 6px 0;}
+  .dots button{width:30px; height:30px; padding:0; border:none; background:transparent; display:grid; place-content:center;}
+  .dots button::before{content:""; width:10px; height:10px; border-radius:50%;
+    border:1.5px solid var(--ink); background:transparent; transition:background .2s;}
+  .dots button[aria-current="true"]::before{background:var(--green);}
+  .legende{text-align:center; text-wrap:balance; font-size:12.5px; line-height:1.45;
+    color:var(--ink-soft); max-width:34ch; padding:10px 8px 0; margin-inline:auto;}
+
+
+
+  /* ---------- menu mobile ---------- */
+  .burger{display:none; width:48px; height:48px; padding:0; border:none; background:transparent; justify-self:end;}
+  .burger span{display:block; width:24px; height:2.5px; margin:5px auto; border-radius:2px;
+    background:var(--ink); transition:transform .25s, opacity .2s;}
+  .menu[hidden]{display:none;}
+  .menu:focus{outline:none;}
+  .menu{
+    position:fixed; inset:0; z-index:60; background:var(--ink); color:var(--cream);
+    padding:96px var(--gutter) 40px; overflow-y:auto; animation:fondu .25s ease;
+  }
+  @keyframes fondu{from{opacity:0;} to{opacity:1;}}
+  .menu nav{display:flex; flex-direction:column;}
+  .menu nav a{
+    font-family:var(--serif); font-variation-settings:"SOFT" 30,"WONK" 1;
+    font-size:30px; font-weight:700; letter-spacing:-.02em; text-decoration:none;
+    padding:13px 0; border-bottom:1px solid rgba(251,245,233,.14);
+  }
+  .menu .lbl{font-size:11.5px; letter-spacing:.18em; text-transform:uppercase; opacity:.55; margin:32px 0 12px;}
+  .menu .coord{display:flex; flex-direction:column; gap:10px; font-size:16px;}
+  .menu .coord a{text-decoration:none; opacity:.9;}
+  .menu .btn{margin-top:30px; background:var(--lime); color:var(--ink); border-color:var(--lime); box-shadow:3px 3px 0 rgba(251,245,233,.35);}
+  .fermer{position:absolute; top:24px; right:var(--gutter); width:48px; height:48px; padding:0;
+    border:1.5px solid rgba(251,245,233,.5); border-radius:50%; background:transparent; color:var(--cream);
+    font-size:20px; line-height:1; display:grid; place-content:center;}
+  body.bloque{overflow:hidden;}
+  @media (max-width:900px){ .burger{display:block;} }
+
+  /* ---------- fil de lecture ---------- */
+  .rail{
+    position:fixed; right:26px; top:50%; translate:0 -50%; z-index:45;
+    display:flex; flex-direction:column; align-items:center; gap:20px; padding:14px 0;
+  }
+  .rail__ligne{position:absolute; top:0; bottom:0; width:2px; background:rgba(34,48,26,.16); border-radius:2px;}
+  .rail__ligne i{display:block; width:100%; height:0; background:var(--green); border-radius:2px; transition:height .12s linear;}
+  .rail a{position:relative; display:block; width:11px; height:11px; text-decoration:none;}
+  .rail b{display:block; width:11px; height:11px; border-radius:50%; border:1.5px solid var(--ink);
+    background:var(--cream); transition:background .25s, scale .25s;}
+  .rail a:hover b{background:var(--lime);}
+  .rail a[aria-current="true"] b{background:var(--green); scale:1.45;}
+  .rail span{
+    position:absolute; right:22px; top:50%; translate:0 -50%; white-space:nowrap;
+    font-size:12px; font-weight:700; padding:6px 13px; border-radius:100px;
+    border:1.5px solid var(--ink); background:var(--lime); box-shadow:2px 2px 0 var(--ink);
+    opacity:0; pointer-events:none; transition:opacity .2s, translate .2s;
+  }
+  .rail a:hover span, .rail a:focus-visible span{opacity:1; translate:-4px -50%;}
+  .jauge{position:fixed; top:0; left:0; z-index:55; height:3px; width:0;
+    background:var(--green); border-right:1.5px solid var(--ink); display:none;}
+  @media (max-width:1180px){ .rail{display:none;} .jauge{display:block;} }
+  @media (prefers-reduced-motion:reduce){ .rail__ligne i, .rail span{transition:none;} }
+
+  /* ---------- chiffres ---------- */
+  .chiffres-zone{background:var(--cream-deep); border-block:1.5px solid var(--ink);}
+  .chiffres{display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(18px,3vw,34px); padding-block:clamp(34px,5vw,56px);}
+  @media (max-width:820px){ .chiffres{grid-template-columns:repeat(2,1fr); gap:26px;} }
+  .chiffre{position:relative; padding-left:clamp(16px,2.4vw,28px);}
+  .chiffre::before{content:""; position:absolute; left:0; top:6px; bottom:6px; width:3px; background:var(--lime); border:1.5px solid var(--ink); border-radius:100px;}
+  .chiffre b{display:block; font-family:var(--serif); font-variation-settings:"SOFT" 30,"WONK" 1;
+    font-size:clamp(42px,5.4vw,64px); font-weight:700; line-height:1; letter-spacing:-.04em; color:var(--green);}
+  .chiffre span{display:block; margin-top:10px; font-size:14.5px; line-height:1.35; color:var(--ink-soft); max-width:22ch;}
+
+  /* ---------- sections ---------- */
+  section{padding:clamp(56px,8vw,110px) 0;}
+  .head{max-width:52ch; margin-bottom:clamp(28px,4vw,52px);}
+  .head p{margin-top:16px;}
+
+  /* travaux */
+  .works{display:grid; grid-template-columns:repeat(12,1fr); gap:clamp(16px,2.2vw,26px);}
+  .work{
+    grid-column:span 6; position:relative; display:block; text-decoration:none;
+    border:1.5px solid var(--ink); border-radius:26px; background:var(--paper);
+    padding:14px; box-shadow:4px 4px 0 var(--ink);
+    transition:transform .18s, box-shadow .18s;
+  }
+  .work:nth-child(odd){rotate:-.8deg;}
+  .work:nth-child(even){rotate:.7deg;}
+  .work:hover{transform:translate(-3px,-3px); box-shadow:8px 8px 0 var(--ink); rotate:0deg;}
+  .work--wide{grid-column:span 12;}
+  .work__img{aspect-ratio:16/10; border-radius:16px; overflow:hidden; border:1.5px solid var(--ink); background:var(--sage-pale);}
+  .work--wide .work__img{aspect-ratio:16/6;}
+  .work__body{padding:16px 6px 6px;}
+  .work__name{font-family:var(--serif); font-size:27px; font-weight:700; letter-spacing:-.02em;}
+  .work p{margin-top:8px; color:var(--ink-soft); font-size:15.5px; max-width:56ch;}
+  .chip{
+    position:absolute; top:24px; left:24px; z-index:2;
+    font-size:12px; font-weight:700; padding:6px 13px; border-radius:100px;
+    border:1.5px solid var(--ink); background:var(--lime);
+  }
+  @media (max-width:760px){ .work{grid-column:span 12;} }
+
+  /* services */
+  .svc-zone{background:var(--sage-pale); border-block:1.5px solid var(--ink);}
+  .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(14px,2vw,22px);}
+  @media (max-width:860px){ .cards{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .cards{grid-template-columns:1fr;} }
+  .card{
+    border:1.5px solid var(--ink); border-radius:22px; background:var(--paper);
+    padding:22px; box-shadow:3px 3px 0 var(--ink);
+    display:flex; flex-direction:column; gap:10px;
+    transition:transform .16s, box-shadow .16s, background .2s;
+  }
+  .card:hover{transform:translate(-3px,-3px); box-shadow:6px 6px 0 var(--ink); background:var(--lime);}
+  .card__mark{width:26px; height:26px; border:1.5px solid var(--ink); border-radius:50%; background:var(--sage);}
+  .card:nth-child(2) .card__mark{background:var(--blush); border-radius:6px;}
+  .card:nth-child(3) .card__mark{background:var(--lime); rotate:45deg;}
+  .card:nth-child(4) .card__mark{background:var(--green);}
+  .card:nth-child(5) .card__mark{background:var(--paper); border-radius:50% 6px 50% 6px;}
+  .card:nth-child(6) .card__mark{background:var(--sage-pale); border-radius:6px; rotate:12deg;}
+  .card p{font-size:15.5px; color:var(--ink-soft);}
+  .card:hover p{color:var(--ink);}
+  .tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:auto; padding-top:6px;}
+  .tags span{font-size:12px; padding:4px 10px; border:1px solid var(--ink); border-radius:100px;}
+  .card--talk{background:var(--green); color:var(--cream); justify-content:center;}
+  .card--talk:hover{background:var(--green-hi);}
+  .card--talk h3{font-family:var(--serif); font-size:26px; font-weight:500; font-style:italic; letter-spacing:-.02em;}
+
+  /* étapes */
+  .steps{display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(14px,2vw,24px); counter-reset:s;}
+  @media (max-width:820px){ .steps{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:480px){ .steps{grid-template-columns:1fr;} }
+  .step{border-top:1.5px solid var(--ink); padding-top:16px;}
+  .step::before{
+    counter-increment:s; content:"0" counter(s);
+    font-family:var(--serif); font-size:44px; font-weight:300; font-style:italic;
+    color:var(--green); display:block; line-height:1; margin-bottom:10px;
+  }
+  .step p{margin-top:8px; color:var(--ink-soft); font-size:15.5px;}
+
+  /* à propos */
+  .about{display:grid; grid-template-columns:.9fr 1.1fr; gap:clamp(28px,5vw,60px); align-items:center;}
+  @media (max-width:860px){ .about{grid-template-columns:1fr;} }
+  .portrait{
+    aspect-ratio:4/5; border:1.5px solid var(--ink); box-shadow:7px 7px 0 var(--ink);
+    background:var(--blush); overflow:hidden;
+    border-radius:200px 200px 26px 26px; rotate:-1.5deg;
+  }
+  .portrait img{display:block; width:100%; height:100%; object-fit:cover;}
+  .about p + p{margin-top:14px;}
+  .about .first{font-family:var(--serif); font-size:clamp(21px,2.2vw,27px); font-style:italic; font-weight:300; line-height:1.3; margin-bottom:18px;}
+
+  /* citation */
+  .quote{
+    border:1.5px solid var(--ink); border-radius:26px; background:var(--blush);
+    box-shadow:5px 5px 0 var(--ink); padding:clamp(26px,4vw,48px);
+    display:grid; grid-template-columns:1.1fr .9fr; gap:clamp(24px,4vw,48px); align-items:center;
+  }
+  @media (max-width:820px){ .quote{grid-template-columns:1fr;} }
+  blockquote{margin:0; font-family:var(--serif); font-size:clamp(25px,3.2vw,40px); line-height:1.16; font-weight:300; font-style:italic; letter-spacing:-.02em;}
+  .quote__who{margin-top:16px; font-weight:700; font-size:15px;}
+  .quote__who span{display:block; font-weight:400; color:var(--ink-soft); font-size:14px;}
+
+  /* blog */
+  .posts{display:grid; grid-template-columns:1fr 1fr; gap:clamp(16px,2.4vw,28px);}
+  @media (max-width:720px){ .posts{grid-template-columns:1fr;} }
+  .post-card{text-decoration:none; display:block;}
+  .post-card__img{aspect-ratio:16/10; border:1.5px solid var(--ink); border-radius:20px; overflow:hidden; box-shadow:4px 4px 0 var(--ink); transition:transform .18s, box-shadow .18s;}
+  .post-card:hover .post-card__img{transform:translate(-3px,-3px); box-shadow:7px 7px 0 var(--ink);}
+  .post-card h3{margin:16px 0 8px; font-family:var(--serif); font-size:24px; font-weight:700; letter-spacing:-.02em;}
+  .post-card p{color:var(--ink-soft); font-size:15.5px;}
+  .meta{display:block; margin-top:10px; font-size:13px; color:var(--ink-soft);}
+
+  /* contact */
+  .contact-zone{background:var(--green); color:var(--cream); border-top:1.5px solid var(--ink);}
+  .contact-zone h2{color:var(--cream);}
+  .contact{display:grid; grid-template-columns:.85fr 1.15fr; gap:clamp(28px,5vw,60px);}
+  @media (max-width:880px){ .contact{grid-template-columns:1fr;} }
+  .contact .lede{color:#DCE6CB;}
+  .coord{list-style:none; margin:28px 0 0; padding:0; display:grid; gap:12px;}
+  .coord li{display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 16px; border-bottom:1px solid rgba(251,245,233,.28); padding-bottom:10px; font-size:15px; word-break:break-word;}
+  .coord span{color:#B9C8A4;}
+  .coord a{text-decoration:none; font-weight:500;}
+  .coord li > i{font-style:normal; font-weight:500; text-align:right;}
+  .coord a:hover{text-decoration:underline;}
+  .formcard{background:var(--paper); color:var(--ink); border:1.5px solid var(--ink); border-radius:26px; box-shadow:6px 6px 0 #1A2614; padding:clamp(20px,3vw,32px);}
+  .row2{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  @media (max-width:520px){ .row2{grid-template-columns:1fr;} }
+  .field{margin-bottom:14px;}
+  .field label{display:block; font-size:13.5px; font-weight:700; margin-bottom:6px;}
+  .field input,.field select,.field textarea{
+    width:100%; font:inherit; font-size:16px; color:var(--ink);
+    background:var(--cream); border:1.5px solid var(--ink); border-radius:14px; padding:12px 14px;
+  }
+  .field textarea{min-height:118px; resize:vertical;}
+  .formfoot{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:6px;}
+  .formfoot .btn{flex:1 1 auto;}
+  @media (min-width:560px){ .formfoot .btn{flex:0 0 auto;} }
+  .formnote{font-size:13.5px; color:var(--ink-soft);}
+  .pot{position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;}
+  .sent{display:none; margin-top:14px; font-size:14.5px; background:var(--sage-pale); border:1.5px solid var(--ink); border-radius:14px; padding:12px 14px;}
+  .sent.on{display:block;}
+  .sent--err{background:var(--blush);}
+
+  /* footer */
+  footer{background:var(--ink); color:var(--cream); padding:44px 0 calc(34px + env(safe-area-inset-bottom));
+    box-shadow:0 100vh 0 var(--ink);}
+  .foot{display:flex; flex-wrap:wrap; gap:22px 28px; justify-content:space-between; align-items:center;}
+  .foot nav{align-items:center;}
+  .foot .mark{filter:invert(1) brightness(1.6);}
+  .foot nav{display:flex; flex-wrap:wrap; gap:18px; font-size:14.5px;}
+  .foot nav a{text-decoration:none; opacity:.82;}
+  .foot nav a:hover{opacity:1; text-decoration:underline;}
+  .legal{width:100%; font-size:13px; opacity:.6; margin-top:8px;}
+  .legal a{text-decoration:none;}
+
+
+  /* ---------- curseur ---------- */
+  body{cursor:url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2230%22%20height=%2230%22%20viewBox=%220%200%2030%2030%22%3E%3Cpath%20d=%22M6%203%20L6%2025%20L11.5%2019.5%20L15%2027.5%20L19%2025.5%20L15.5%2018%20L23%2018%20Z%22%20fill=%22%23DCEE5F%22%20stroke=%22%2322301A%22%20stroke-width=%222.6%22%20stroke-linejoin=%22round%22/%3E%3C/svg%3E") 6 3, auto;}
+  a, button, summary, [role="tab"], .work, .post-card, .gal, .gal.drag{cursor:url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2230%22%20height=%2230%22%20viewBox=%220%200%2030%2030%22%3E%3Cpath%20d=%22M6%203%20L6%2025%20L11.5%2019.5%20L15%2027.5%20L19%2025.5%20L15.5%2018%20L23%2018%20Z%22%20fill=%22%233E5A2B%22%20stroke=%22%23DCEE5F%22%20stroke-width=%222.6%22%20stroke-linejoin=%22round%22/%3E%3C/svg%3E") 6 3, pointer;}
+  input, select, textarea{cursor:auto;}
+
+  /* ---------- entrée ---------- */
+  .rise{opacity:0; transform:translateY(20px); animation:rise .8s cubic-bezier(.2,.85,.25,1) forwards;}
+  @keyframes rise{to{opacity:1; transform:none;}}
+  .phone.rise{animation-name:drop;}
+  @keyframes drop{from{opacity:0; transform:translateY(34px) rotate(-8deg);} to{opacity:1; transform:none; rotate:-2.5deg;}}
+
+  /* ---------- tampon ---------- */
+  .stamp{
+    position:absolute; z-index:3; left:-58px; top:38%; width:128px; height:128px;
+    border-radius:50%; border:1.5px solid var(--ink); background:var(--blush);
+    box-shadow:3px 3px 0 var(--ink); display:grid; place-content:center;
+  }
+  .stamp svg{position:absolute; inset:0; width:100%; height:100%; animation:spin 20s linear infinite;}
+  .stamp b{font-family:var(--serif); font-size:27px; font-weight:700; line-height:1;}
+  .stamp i{display:block; font-style:normal; font-size:10.5px; text-align:center;}
+  @keyframes spin{to{rotate:360deg;}}
+  @media (max-width:520px){ .stamp{left:-14px; top:40%; width:96px; height:96px;} .stamp b{font-size:21px;}
+    .phone{width:min(330px,84vw); rotate:-1.6deg;} .colonne-phone{padding-left:14px;} }
+
+  /* ---------- sélecteur de réseau ---------- */
+  .switch{display:flex; gap:5px; padding:2px 4px 12px;}
+  .switch button{
+    font:inherit; font-size:12.5px; font-weight:700;
+    padding:6px 13px; border-radius:100px; border:1.5px solid var(--ink);
+    background:transparent; color:var(--ink); transition:background .18s;
+  }
+  .switch button[aria-selected="true"]{background:var(--lime);}
+
+  /* ---------- galerie ---------- */
+  .gal{overflow-x:auto; scroll-snap-type:x proximity; scrollbar-width:none; -ms-overflow-style:none;}
+  .gal::-webkit-scrollbar{display:none;}
+  .gal.drag{scroll-snap-type:none;}
+  .gal .works{display:flex; padding:10px 4px 14px;}
+  .gal .work{flex:0 0 min(520px,80vw); scroll-snap-align:start;}
+  .gal .work--wide{flex:0 0 min(520px,80vw);}
+  .gal .work--wide .work__img{aspect-ratio:16/10;}
+  .gal.drag .work{pointer-events:none;}
+  .galbar{display:flex; align-items:center; gap:14px; margin-top:6px;}
+  .galbar button{
+    width:46px; height:46px; flex:none; font-size:18px;
+    border:1.5px solid var(--ink); border-radius:50%; background:var(--paper);
+    box-shadow:2px 2px 0 var(--ink); transition:transform .12s, box-shadow .12s, background .2s;
+  }
+  .galbar button:hover{background:var(--lime); transform:translate(-1px,-1px); box-shadow:4px 4px 0 var(--ink);}
+  .galbar button:disabled{opacity:.35; box-shadow:none; transform:none; background:var(--paper);}
+  .galbar .rail{flex:1; height:6px; border:1.5px solid var(--ink); border-radius:100px; overflow:hidden;}
+  .galbar .rail i{display:block; height:100%; width:20%; background:var(--green);}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important; transition:none !important;}
+    html{scroll-behavior:auto;}
+    .post figure{opacity:1;}
+    .post figure:not(.on){display:none;}
+    .rise{opacity:1; transform:none;}
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://jdsocial.fr/#site",
+   "url": "https://jdsocial.fr/",
+   "name": "JD Social",
+   "alternateName": [
+    "JD Social Media",
+    "JDSOCIALS",
+    "Julie Daniaud"
+   ],
+   "inLanguage": "fr-FR",
+   "description": "Site de JD Social, community manager freelance à Toulon (Var).",
+   "publisher": {
+    "@id": "https://jdsocial.fr/#organisation"
+   }
+  },
+  {
+   "@type": "ImageObject",
+   "@id": "https://jdsocial.fr/#logo",
+   "url": "https://jdsocial.fr/logo-jd.png",
+   "width": 260,
+   "height": 232,
+   "caption": "JD Social"
+  },
+  {
+   "@type": [
+    "ProfessionalService",
+    "Organization"
+   ],
+   "@id": "https://jdsocial.fr/#organisation",
+   "name": "JD Social",
+   "alternateName": [
+    "JD Social Media",
+    "JDSOCIALS",
+    "Julie Daniaud"
+   ],
+   "legalName": "Julie Daniaud",
+   "description": "JD Social est l'activité de community management de Julie Daniaud, community manager freelance installée à Toulon, dans le Var : stratégie de réseaux sociaux, création de contenus, publicité, analyse et formation.",
+   "url": "https://jdsocial.fr/",
+   "logo": {
+    "@id": "https://jdsocial.fr/#logo"
+   },
+   "image": "https://jdsocial.fr/og-image.jpg",
+   "email": "juliedaniaud.pro@gmail.com",
+   "founder": {
+    "@id": "https://jdsocial.fr/#julie"
+   },
+   "employee": {
+    "@id": "https://jdsocial.fr/#julie"
+   },
+   "foundingDate": "2024",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Toulon",
+    "postalCode": "83000",
+    "addressRegion": "Var",
+    "addressCountry": "FR"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Toulon"
+    },
+    {
+     "@type": "City",
+     "name": "La Garde"
+    },
+    {
+     "@type": "City",
+     "name": "La Valette-du-Var"
+    },
+    {
+     "@type": "City",
+     "name": "Le Pradet"
+    },
+    {
+     "@type": "City",
+     "name": "Ollioules"
+    },
+    {
+     "@type": "City",
+     "name": "Six-Fours-les-Plages"
+    },
+    {
+     "@type": "City",
+     "name": "La Seyne-sur-Mer"
+    },
+    {
+     "@type": "City",
+     "name": "Sanary-sur-Mer"
+    },
+    {
+     "@type": "City",
+     "name": "Hyères"
+    },
+    {
+     "@type": "City",
+     "name": "Saint-Cyr-sur-Mer"
+    },
+    {
+     "@type": "City",
+     "name": "Draguignan"
+    },
+    {
+     "@type": "City",
+     "name": "Marseille"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Var"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Provence-Alpes-Côte d'Azur"
+    },
+    {
+     "@type": "Country",
+     "name": "France"
+    }
+   ],
+   "priceRange": "€€",
+   "currenciesAccepted": "EUR",
+   "vatID": "FR89933905291",
+   "taxID": "93390529100029",
+   "sameAs": [
+    "https://www.linkedin.com/in/julie-daniaud",
+    "https://www.facebook.com/julie.daniaudpro.9"
+   ],
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+     ],
+     "opens": "09:00",
+     "closes": "18:00"
+    }
+   ],
+   "knowsAbout": [
+    "Community management",
+    "Réseaux sociaux",
+    "Instagram",
+    "Facebook",
+    "LinkedIn",
+    "Stratégie éditoriale",
+    "Publicité Meta",
+    "Communication digitale"
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Prestations de community management",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Stratégie et gestion des réseaux sociaux",
+       "provider": {
+        "@id": "https://jdsocial.fr/#organisation"
+       },
+       "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Var"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Création de contenus",
+       "provider": {
+        "@id": "https://jdsocial.fr/#organisation"
+       },
+       "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Var"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Publicité et sponsorisation sur les réseaux sociaux",
+       "provider": {
+        "@id": "https://jdsocial.fr/#organisation"
+       },
+       "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Var"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Analyse des données et reporting",
+       "provider": {
+        "@id": "https://jdsocial.fr/#organisation"
+       },
+       "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Var"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Conseils et audit des réseaux sociaux",
+       "provider": {
+        "@id": "https://jdsocial.fr/#organisation"
+       },
+       "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Var"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Formation aux réseaux sociaux",
+       "provider": {
+        "@id": "https://jdsocial.fr/#organisation"
+       },
+       "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Var"
+       }
+      }
+     }
+    ]
+   },
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Prise de contact",
+    "email": "juliedaniaud.pro@gmail.com",
+    "availableLanguage": [
+     "fr"
+    ],
+    "areaServed": "FR"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://jdsocial.fr/#julie",
+   "name": "Julie Daniaud",
+   "givenName": "Julie",
+   "familyName": "Daniaud",
+   "jobTitle": "Community manager freelance",
+   "description": "Julie Daniaud est la fondatrice de JD Social, une activité de community management freelance basée à Toulon, dans le Var. Elle accompagne entreprises, associations et institutions sur leurs réseaux sociaux depuis 2018, et à son compte depuis 2024.",
+   "url": "https://jdsocial.fr/",
+   "mainEntityOfPage": {
+    "@id": "https://jdsocial.fr/#webpage"
+   },
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://jdsocial.fr/julie-daniaud.webp",
+    "width": 880,
+    "height": 1173
+   },
+   "email": "juliedaniaud.pro@gmail.com",
+   "worksFor": {
+    "@id": "https://jdsocial.fr/#organisation"
+   },
+   "homeLocation": {
+    "@type": "Place",
+    "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Toulon",
+     "postalCode": "83000",
+     "addressRegion": "Var",
+     "addressCountry": "FR"
+    }
+   },
+   "workLocation": {
+    "@type": "Place",
+    "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Toulon",
+     "postalCode": "83000",
+     "addressRegion": "Var",
+     "addressCountry": "FR"
+    }
+   },
+   "knowsAbout": [
+    "Community management",
+    "Réseaux sociaux",
+    "Stratégie éditoriale",
+    "Publicité Meta",
+    "Instagram",
+    "LinkedIn",
+    "Facebook",
+    "Formation aux réseaux sociaux"
+   ],
+   "knowsLanguage": [
+    {
+     "@type": "Language",
+     "name": "Français"
+    }
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/in/julie-daniaud",
+    "https://www.facebook.com/julie.daniaudpro.9"
+   ]
+  },
+  {
+   "@type": "Blog",
+   "@id": "https://jdsocial.fr/#blog",
+   "name": "Conseils et coulisses d'une community manager",
+   "url": "https://jdsocial.fr/#blog",
+   "inLanguage": "fr-FR",
+   "publisher": {
+    "@id": "https://jdsocial.fr/#organisation"
+   },
+   "author": {
+    "@id": "https://jdsocial.fr/#julie"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://jdsocial.fr/#webpage",
+   "url": "https://jdsocial.fr/",
+   "name": "JD Social | Julie Daniaud, community manager à Toulon",
+   "description": "Julie Daniaud, community manager freelance à Toulon (Var) : stratégie, contenus, publicité et formation.",
+   "inLanguage": "fr-FR",
+   "isPartOf": {
+    "@id": "https://jdsocial.fr/#site"
+   },
+   "about": {
+    "@id": "https://jdsocial.fr/#organisation"
+   },
+   "publisher": {
+    "@id": "https://jdsocial.fr/#organisation"
+   },
+   "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://jdsocial.fr/julie-daniaud.webp"
+   },
+   "mainEntity": {
+    "@id": "https://jdsocial.fr/#organisation"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+
+<div class="jauge" id="jauge" aria-hidden="true"></div>
+<nav class="rail" id="rail" aria-label="Progression dans la page">
+  <span class="rail__ligne" aria-hidden="true"><i id="railFill"></i></span>
+  <a href="#top" data-cible="top"><b></b><span>Accueil</span></a>
+  <a href="#travaux" data-cible="travaux"><b></b><span>Réalisations</span></a>
+  <a href="#savoirfaire" data-cible="savoirfaire"><b></b><span>Savoir-faire</span></a>
+  <a href="#methode" data-cible="methode"><b></b><span>Méthode</span></a>
+  <a href="#julie" data-cible="julie"><b></b><span>Moi c'est Julie</span></a>
+  <a href="#blog" data-cible="blog"><b></b><span>Blog</span></a>
+  <a href="#contact" data-cible="contact"><b></b><span>Contact</span></a>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="bar">
+      <a class="mark" href="#top">JD Social</a>
+      <nav aria-label="Navigation principale">
+        <a href="#travaux">Réalisations</a>
+        <a href="#savoirfaire">Ce que je sais faire</a>
+        <a href="/tarifs.html">Tarifs</a>
+        <a href="#julie">Moi c'est Julie</a>
+        <a href="#blog">Blog</a>
+      </nav>
+      <a class="btn btn--sm" href="#contact">Prendre RDV</a>
+      <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" tabindex="-1" hidden>
+  <button class="fermer" id="fermer" type="button" aria-label="Fermer le menu">✕</button>
+  <nav aria-label="Menu">
+    <a href="#travaux">Réalisations</a>
+    <a href="#savoirfaire">Ce que je sais faire</a>
+    <a href="/tarifs.html">Tarifs</a>
+    <a href="/community-manager-toulon.html">Community manager à Toulon</a>
+    <a href="#methode">Méthode</a>
+    <a href="#julie">Moi c'est Julie</a>
+    <a href="#blog">Blog</a>
+  </nav>
+  <p class="lbl">Contact</p>
+  <div class="coord">
+    <a href="mailto:juliedaniaud.pro@gmail.com">juliedaniaud.pro@gmail.com</a>
+    <a href="https://www.linkedin.com/in/julie-daniaud">LinkedIn</a>
+  </div>
+  <a class="btn" href="#contact">Prendre RDV</a>
+</div>
+
+<main id="top">
+
+  <div class="wrap hero">
+    <div class="hero__grid">
+      <div>
+        <p class="etiquette rise">Community manager freelance à Toulon</p>
+        <h1 class="rise" style="animation-delay:.06s">Faites de vos<span class="l2">réseaux</span><span class="l3">une vraie force.</span></h1>
+        <p class="lede rise" style="animation-delay:.12s">Besoin d'offrir un nouveau souffle à vos réseaux ? De la grande institution à l'épicerie de quartier, je construis des stratégies sur mesure et je les pilote jusqu'aux résultats.</p>
+        <div class="cta rise" style="animation-delay:.22s">
+          <a class="btn" href="#contact">Prendre RDV</a>
+          <a class="btn btn--lime" href="#travaux">Voir mes clients</a>
+        </div>
+        <svg class="squiggle" viewBox="0 0 300 26" fill="none" aria-hidden="true">
+          <path d="M2 18C28 4 44 24 70 14s42 8 68-2 42 12 68 2 42 8 90-6" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="colonne-phone">
+      <div class="phone rise" style="animation-delay:.35s">
+        <div class="stamp">
+          <svg viewBox="0 0 128 128" aria-hidden="true">
+            <path id="ring" fill="none" d="M64 20a44 44 0 1 1 0 88 44 44 0 1 1 0-88"></path>
+            <text font-size="11.5" font-family="DM Sans, sans-serif" font-weight="700" fill="#22301A">
+              <textPath href="#ring" startOffset="0">disponible pour de nouveaux projets ✳ 2026 ✳</textPath>
+            </text>
+          </svg>
+          <b>8 ans</b><i>en social media</i>
+        </div>
+
+        <div class="switch" role="tablist" aria-label="Réseau affiché">
+          <button type="button" role="tab" data-net="ig" aria-selected="true">Instagram</button>
+          <button type="button" role="tab" data-net="li" aria-selected="false">LinkedIn</button>
+          <button type="button" role="tab" data-net="fb" aria-selected="false">Facebook</button>
+        </div>
+
+        <div class="screen" id="screen" aria-live="polite"></div>
+      </div>
+      <div class="dots" id="dots" role="tablist" aria-label="Exemples de publications"></div>
+      <p class="legende">Des publications que j'ai produites pour mes clients. Changez de réseau pour comparer les formats.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="chiffres-zone">
+    <div class="wrap chiffres">
+      <div class="chiffre"><b data-val="8">8</b><span>ans en social media</span></div>
+      <div class="chiffre"><b data-val="12">12</b><span>marques et institutions accompagnées</span></div>
+      <div class="chiffre"><b data-val="30">30</b><span>contenus produits chaque mois</span></div>
+      <div class="chiffre"><b data-pre="+" data-val="35" data-suf=" %">+35 %</b><span>d'abonnés en moyenne après un an d'accompagnement</span></div>
+    </div>
+  </div>
+
+  <section id="travaux">
+    <div class="wrap">
+      <div class="head">
+        <h2>Ils m'ont fait confiance.</h2>
+        <p class="lede">Des sujets techniques, des cadres institutionnels, des marques qui démarrent tout juste. À chaque fois, la même ligne tenue du premier post jusqu'au bilan.</p>
+      </div>
+
+      <div class="works">
+        <a class="work" href="#contact">
+          <span class="chip">Sujet technique</span>
+          <div class="work__img"><img src="/img/piles-batteries-usagees.webp" alt="Un amas de piles et de batteries usagées de tous formats" width="1400" height="875" loading="lazy" decoding="async"></div>
+          <div class="work__body">
+            <div class="work__name">Batribox</div>
+            <p>L'éco-organisme agréé pour la collecte et le recyclage des piles et batteries en France. Un sujet réglementaire et technique, à rendre clair et attirant pour le grand public, au moment même où la marque changeait de nom.</p>
+          </div>
+        </a>
+
+        <a class="work" href="#contact">
+          <span class="chip">Deux publics</span>
+          <div class="work__img"><img src="/img/coureuse-exterieur-coucher-soleil.webp" alt="Une coureuse en extérieur, au coucher du soleil" width="1400" height="875" loading="lazy" decoding="async"></div>
+          <div class="work__body">
+            <div class="work__name">Hexoskin</div>
+            <p>Des t-shirts connectés qui mesurent le rythme cardiaque, la respiration et l'activité. Deux publics à convaincre sans perdre ni l'un ni l'autre : les sportifs d'un côté, la recherche clinique de l'autre.</p>
+          </div>
+        </a>
+
+        <a class="work" href="#contact">
+          <span class="chip">Communauté internationale</span>
+          <div class="work__img"><img src="/img/salle-de-classe-eleves-enseignant.webp" alt="Une salle de classe vue du fond, des élèves face à leur enseignant" width="1400" height="875" loading="lazy" decoding="async"></div>
+          <div class="work__body">
+            <div class="work__name">FIPF</div>
+            <p>La Fédération internationale des professeurs de français, qui fédère les associations d'enseignants sur tous les continents. Une communauté déjà vivante, qu'il s'agissait d'animer et de faire dialoguer d'un pays à l'autre.</p>
+          </div>
+        </a>
+
+        <a class="work" href="#contact">
+          <span class="chip">Institutionnel</span>
+          <div class="work__img"><img src="/img/entretien-professionnel-bureau.webp" alt="Deux femmes en entretien autour d'une table, dans un bureau" width="1400" height="875" loading="lazy" decoding="async"></div>
+          <div class="work__body">
+            <div class="work__name">Mon CEP</div>
+            <p>Le service public du conseil en évolution professionnelle. Carrousels, annonces de la tournée du truck en région, infographie du baromètre annuel. Un cadre institutionnel serré, et quand même de la respiration dans le ton.</p>
+          </div>
+        </a>
+
+        <div class="work work--wide">
+          <span class="chip">À venir</span>
+          <div class="work__img"><img src="/img/studio-pilates-reformer.webp" alt="Un exercice sur un reformer, dans un studio de Pilates" width="1400" height="875" loading="lazy" decoding="async"></div>
+          <div class="work__body">
+            <div class="work__name">Un studio de Pilates Reformer, en région parisienne</div>
+            <p>Une ouverture prévue à deux pas de La Défense, et tout à construire avant le premier cours : audit du marché local, ligne éditoriale, création du compte Instagram, calendrier de contenus et campagne Meta Ads calée sur la date d'ouverture. Le nom du studio arrive ici le jour de l'ouverture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="svc-zone">
+    <section id="savoirfaire">
+      <div class="wrap">
+        <div class="head">
+          <h2>Six façons de travailler ensemble.</h2>
+          <p class="lede">À prendre séparément ou dans le cadre d'un accompagnement mensuel.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__mark"></div>
+            <h3>Stratégie &amp; réseaux sociaux</h3>
+            <p>On construit votre stratégie ensemble : à qui vous parlez, sur quel ton, à quel rythme. Ensuite je m'en occupe, j'analyse les statistiques Facebook et LinkedIn, et j'ajuste en continu.</p>
+            <div class="tags"><span>Ligne éditoriale</span><span>Cibles</span><span>Calendrier</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card__mark"></div>
+            <h3>Création de contenus</h3>
+            <p>Je m'appuie sur votre charte visuelle et j'y ajoute ma créativité. Posts et légendes qui donnent envie de s'arrêter, visuels sur Canva, vidéos montées sur CapCut, stories pensées pour capter en trois secondes.</p>
+            <div class="tags"><span>Rédaction</span><span>Canva</span><span>CapCut</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card__mark"></div>
+            <h3>Publicité &amp; sponsorisation</h3>
+            <p>Vous faire connaître, vendre, ou récupérer des contacts qualifiés. Le budget se décide avec vous, et je prends tout le reste en charge : visuels, textes d'annonces, ciblage, optimisation en cours de campagne et bilan.</p>
+            <div class="tags"><span>Meta Ads</span><span>Ciblage</span><span>Optimisation</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card__mark"></div>
+            <h3>Analyse des données</h3>
+            <p>Une fois la stratégie lancée, je surveille vos chiffres dans la durée : engagement, portée, croissance de la communauté, trafic et conversions, sur Meta Business Suite, LinkedIn Analytics et Google Analytics. Rapport écrit et point de bilan à la fréquence qu'on fixe ensemble au démarrage.</p>
+            <div class="tags"><span>Meta Business Suite</span><span>LinkedIn Analytics</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card__mark"></div>
+            <h3>Conseils &amp; audits</h3>
+            <p>Un état des lieux ponctuel : audit de vos pages, de votre ligne éditoriale et de vos campagnes, plus un benchmark pour voir où vous vous situez. Recommandations concrètes et veille sur les tendances, dans un document clair, directement utilisable.</p>
+            <div class="tags"><span>Audit</span><span>Benchmark</span><span>Veille</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card__mark"></div>
+            <h3>Formation à l'autonomie</h3>
+            <p>Vous préférez tenir vos réseaux vous-même ? Je vous forme, vous ou votre équipe : prise en main des outils, création de contenus, planification et lecture des statistiques. À la fin, vous gérez votre page sans moi, et c'est le but.</p>
+            <div class="tags"><span>Prise en main</span><span>Bonnes pratiques</span><span>Autonomie</span></div>
+          </article>
+        </div>
+
+        <div class="cards" style="margin-top:clamp(14px,2vw,22px); grid-template-columns:1fr;">
+          <article class="card card--talk">
+            <h3>Vous ne savez pas par où commencer ?</h3>
+            <p style="color:#DCE6CB;">C'est souvent le cas, et c'est normal. On en parle une demi-heure, je vous dis ce qui est réaliste avant de vous proposer quoi que ce soit.</p>
+            <div style="margin-top:8px; display:flex; flex-wrap:wrap; gap:10px;"><a class="btn btn--lime btn--sm" href="#contact">Prendre RDV</a><a class="btn btn--sm" href="/tarifs.html" style="background:transparent; color:var(--cream); border-color:var(--cream);">Voir les tarifs</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="methode">
+    <div class="wrap">
+      <div class="head"><h2>Comment ça se passe ?</h2></div>
+      <div class="steps">
+        <div class="step"><h3>Je regarde</h3><p>Vos pages, votre ligne éditoriale, vos campagnes, et ce que fait la concurrence autour de vous.</p></div>
+        <div class="step"><h3>On décide</h3><p>Objectifs, cibles, plateformes retenues et calendrier éditorial.</p></div>
+        <div class="step"><h3>Je produis</h3><p>Rédaction, visuels, montage et publication, au rythme qu'on a fixé ensemble.</p></div>
+        <div class="step"><h3>On fait le bilan</h3><p>Suivi des indicateurs, ajustements en continu, et des points complets qu'on cale ensemble selon vos besoins.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="julie" style="padding-top:0;">
+    <div class="wrap about">
+      <div class="portrait"><img src="/julie-daniaud.webp" alt="Julie Daniaud, community manager freelance à Toulon" width="880" height="1173" loading="lazy" decoding="async"></div>
+      <div>
+        <h2>Moi c'est Julie Daniaud !</h2>
+        <p class="first">Et si on faisait de vos réseaux sociaux une force ?</p>
+        <p>Experte en réseaux sociaux, j'accompagne en freelance depuis 2024 les entreprises institutionnelles et les petites marques pour développer leur visibilité en ligne. Je travaille depuis <a href="/community-manager-toulon.html">Toulon, dans le Var</a>, avec des structures installées partout en France.</p>
+        <p>Huit ans de social media derrière moi, dont deux à mon compte. Je conçois et je pilote des stratégies sur mesure, adaptées aux objectifs, aux contraintes et aux valeurs de chaque structure.</p>
+        <p>Ce qui compte pour moi : comprendre finement votre métier, connaître les plateformes à fond, et tenir la cohérence du premier post jusqu'au bilan.</p>
+        <div class="cta" style="margin-top:26px;"><a class="btn" href="#contact">Prendre RDV</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="quote">
+        <blockquote>« Elle a su s'adapter à nos contraintes institutionnelles tout en apportant une vraie fraîcheur éditoriale. »</blockquote>
+        <div>
+          <p>Nous avons fait appel à Julie pour structurer notre présence sur les réseaux sociaux et le résultat a dépassé nos attentes. Sérieuse, disponible et force de proposition, elle est devenue un véritable appui pour notre équipe.</p>
+          <p class="quote__who">Mon CEP<span>Service public du conseil en évolution professionnelle</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" style="padding-top:0;">
+    <div class="wrap">
+      <div class="head"><h2>Conseils et coulisses d'une community manager.</h2></div>
+      <div class="posts">
+        <a class="post-card" href="/une-semaine-community-manager-freelance.html">
+          <div class="post-card__img"><img src="/img/smartphone-bureau-mains.webp" alt="" width="1400" height="875" loading="lazy" decoding="async"></div>
+          <h3>Une semaine dans la vie d'une community manager freelance</h3>
+          <p>Le rythme réel derrière un calendrier éditorial : les arbitrages, les imprévus clients et les journées consacrées à la production.</p>
+          <span class="meta">Julie, 28 août 2026, 2 min de lecture</span>
+        </a>
+        <a class="post-card" href="/facebook-ou-linkedin.html">
+          <div class="post-card__img"><img src="/img/mains-smartphone-gros-plan.webp" alt="" width="1400" height="875" loading="lazy" decoding="async"></div>
+          <h3>Facebook ou LinkedIn : quel réseau choisir pour votre structure ?</h3>
+          <p>Deux audiences, deux usages, deux façons d'écrire. Comment trancher sans se disperser.</p>
+          <span class="meta">Julie, 3 juillet 2026, 2 min de lecture</span>
+        </a>
+        <a class="post-card" href="/5-erreurs-frequentes-reseaux-sociaux.html">
+          <div class="post-card__img"><img src="/img/bureau-clavier-objets-personnels.webp" alt="" width="1400" height="875" loading="lazy" decoding="async"></div>
+          <h3>5 erreurs fréquentes sur les réseaux sociaux qui freinent votre visibilité</h3>
+          <p>Publier sans calendrier, parler à tout le monde, ignorer les statistiques : les pièges les plus courants, et comment en sortir.</p>
+          <span class="meta">Julie, 22 mai 2026, 2 min de lecture</span>
+        </a>
+        <a class="post-card" href="/reseaux-sociaux-essentiels-pme.html">
+          <div class="post-card__img"><img src="/img/bureau-smartphone-tasse-cafe.webp" alt="" width="1400" height="875" loading="lazy" decoding="async"></div>
+          <h3>Pourquoi les réseaux sociaux sont devenus essentiels pour les PME</h3>
+          <p>Visibilité, confiance, positionnement : ce que les réseaux apportent concrètement à une structure à taille humaine.</p>
+          <span class="meta">Julie, 9 avril 2026, 2 min de lecture</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact-zone">
+    <section id="contact">
+      <div class="wrap contact">
+        <div>
+          <h2>Travaillons ensemble !</h2>
+          <p class="lede" style="margin-top:18px;">Vous me racontez où vous en êtes, je vous dis ce qui est réaliste et à quel rythme. Sur place à <a href="/community-manager-toulon.html" style="color:var(--lime);">Toulon et dans le Var</a>, ou à distance partout en France. Sans engagement.</p>
+          <ul class="coord">
+            <li><span>E-mail</span><a href="mailto:juliedaniaud.pro@gmail.com">juliedaniaud.pro@gmail.com</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/julie-daniaud">julie-daniaud</a></li>
+            <li><span>Zone d'intervention</span><i>Toulon, le Var et les alentours, à distance partout en France</i></li>
+            <li><span>Disponibilité</span><i>Du lundi au vendredi, 9 h à 18 h</i></li>
+          </ul>
+        </div>
+
+        <div class="formcard">
+          <form id="contactForm" name="contact" method="POST" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="9cb93003-a347-4f69-bf4e-09caaac1bb44">
+            <input type="hidden" name="subject" value="Nouveau message depuis jdsocial.fr">
+            <p class="pot"><label>Laissez ce champ vide <input name="botcheck" tabindex="-1" autocomplete="off"></label></p>
+            <div class="row2">
+              <div class="field"><label for="nom">Votre nom</label><input id="nom" name="nom" type="text" autocomplete="name" placeholder="Prénom et nom" required></div>
+              <div class="field"><label for="structure">Votre structure</label><input id="structure" name="structure" type="text" autocomplete="organization" placeholder="Entreprise, association…"></div>
+            </div>
+            <div class="field"><label for="email">Votre e-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="vous@structure.fr" required></div>
+            <div class="field">
+              <label for="besoin">Définir vos besoins</label>
+              <select id="besoin" name="besoin">
+                <option>Stratégie &amp; réseaux sociaux</option>
+                <option>Création de contenus</option>
+                <option>Publicité &amp; sponsorisation</option>
+                <option>Analyse des données</option>
+                <option>Conseils &amp; audits</option>
+                <option>Formation à l'autonomie</option>
+                <option>Je ne sais pas encore</option>
+              </select>
+            </div>
+            <div class="field"><label for="message">Votre message</label><textarea id="message" name="message" placeholder="Où en êtes-vous aujourd'hui sur vos réseaux ?" required></textarea></div>
+            <div class="formfoot">
+              <button class="btn" type="submit">Envoyer</button>
+              <span class="formnote">Je réponds sous 48 h ouvrées.</span>
+            </div>
+            <div class="sent" id="sent" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="mark" href="#top">JD Social</a>
+    <nav>
+      <a href="#travaux">Réalisations</a>
+      <a href="#savoirfaire">Ce que je sais faire</a>
+      <a href="/tarifs.html">Tarifs</a>
+      <a href="/community-manager-toulon.html">Community manager à Toulon</a>
+      <a href="#julie">Moi c'est Julie</a>
+      <a href="#blog">Blog</a>
+      <a href="https://www.linkedin.com/in/julie-daniaud">LinkedIn</a>
+    </nav>
+    <p class="legal">© 2026 JD Social, Toulon (Var), SIRET 933 905 291 00029, <a href="/mentions-legales.html">mentions légales</a></p>
+  </div>
+</footer>
+
+<script>
+  /* ---------- Maquette : une publication, trois interfaces ---------- */
+  (function(){
+    var screen = document.getElementById('screen');
+    var dotsBox = document.getElementById('dots');
+    var reduit = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    var I = {
+      maison:'M4 11.2 12 4l8 7.2V19a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z',
+      loupe:'M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-4.2-4.2',
+      coeur:'M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z',
+      bulle:'M20 12a7 7 0 0 1-7 7H8l-4 3 1.2-4.6A7 7 0 0 1 11 5h2a7 7 0 0 1 7 7z',
+      avion:'M21 3 3 10.4l7.2 2.9L13.2 21z',
+      signet:'M7 4h10v16l-5-4-5 4z',
+      video:'M4 5h16v14H4zM10.5 9.2 15 12l-4.5 2.8z',
+      profil:'M12 4a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM5 20c0-3.4 3-5.4 7-5.4s7 2 7 5.4',
+      gens:'M9.5 4.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM2.5 20c0-3 2.9-4.8 7-4.8s7 1.8 7 4.8M17 10a2.5 2.5 0 1 0 0-5M21.5 20c0-2.2-1-3.6-3-4.2',
+      plus:'M4.5 4.5h15v15h-15zM12 8.5v7M8.5 12h7',
+      cloche:'M6.2 9.4a5.8 5.8 0 1 1 11.6 0c0 3.8 1.5 4.8 1.5 4.8H4.7s1.5-1 1.5-4.8zM10 18.4a2 2 0 0 0 4 0',
+      valise:'M4 8.5h16V19H4zM9 8.5V6.2h6v2.3',
+      boutique:'M4.5 9.5h15V19h-15zM4.5 9.5 6.4 5h11.2l1.9 4.5',
+      menu:'M4 7h16M4 12h16M4 17h16',
+      pouce:'M7 10.2V19H4.2v-8.8zM7 10.2l3.8-6c1.6 0 2.4 1 2 2.6l-.6 2.3h5.6a2 2 0 0 1 2 2.5l-1.2 5.2A2 2 0 0 1 16.6 19H7',
+      repost:'M4.5 9 7.5 6l3 3M7.5 6.4v7.2a3 3 0 0 0 3 3h3.5M19.5 15l-3 3-3-3M16.5 17.6v-7.2a3 3 0 0 0-3-3H10',
+      globe:'M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM4.2 12h15.6M12 4.2c2.6 2.8 2.6 12.8 0 15.6M12 4.2c-2.6 2.8-2.6 12.8 0 15.6',
+      points:'M6.2 12h.01M12 12h.01M17.8 12h.01'
+    };
+    function ic(n, cls){
+      return '<svg viewBox="0 0 24 24"' + (cls ? ' class="' + cls + '"' : '') + ' aria-hidden="true"><path d="' + I[n] + '"/></svg>';
+    }
+    function tab(noms){
+      return '<div class="tabbar">' + noms.map(function(n, k){
+        return ic(n, k === 0 ? 'actif' : '');
+      }).join('') + '</div>';
+    }
+    function statut(){
+      return '<div class="statut"><span>9:41</span><span>￭￭￭ <i></i></span></div>';
+    }
+
+    var IMG = [
+      '/img/piles-batteries-usagees.webp',
+      '/img/coureuse-exterieur-coucher-soleil.webp',
+      '/img/salle-de-classe-eleves-enseignant.webp'
+    ];
+    var ALT = ['Publication pour Batribox', 'Publication pour Hexoskin', 'Publication pour la FIPF'];
+
+    var POSTS = [
+      {
+        nom:'Batribox', ini:'B', teinte:'av--sage', pseudo:'batribox',
+        liSous:'Collecte et recyclage des piles et batteries', fbSous:'Page · Environnement',
+        ig:{ txt:"Vos piles usagées ont une deuxième vie. On vous montre où les déposer, en trois slides.", jaime:'248', com:'12', quand:'il y a 2 heures' },
+        li:{ quand:'2 j', txt:"Screlec devient Batribox. Ce que ce changement de nom implique pour nos partenaires collecteurs.", reacts:'96', rep:'8 republications' },
+        fb:{ quand:'3 h', txt:"Le point de collecte le plus proche est souvent à moins de 500 m de chez vous. Vérifiez sur la carte.", reacts:'143', com:'21 commentaires', part:'9 partages' }
+      },
+      {
+        nom:'Hexoskin', ini:'H', teinte:'av--blush', pseudo:'hexoskin',
+        liSous:'Vêtements connectés pour le sport et la recherche', fbSous:'Page · Sport et santé',
+        ig:{ txt:"Un t-shirt qui compte vos respirations. Oui, vraiment. On vous explique en story.", jaime:'187', com:'9', quand:'il y a 5 heures' },
+        li:{ quand:'4 j', txt:"Deux terrains, une même technologie : le sport de haut niveau et la recherche clinique. Retour sur nos derniers déploiements.", reacts:'134', rep:'11 republications' },
+        fb:{ quand:'6 h', txt:"Nos ambassadeurs testent le t-shirt connecté sur un trail de 40 km. Résultats en commentaire.", reacts:'96', com:'14 commentaires', part:'5 partages' }
+      },
+      {
+        nom:'FIPF', ini:'F', teinte:'av--lime', pseudo:'fipf.francophonie',
+        liSous:'Fédération internationale des professeurs de français', fbSous:'Page · Organisation éducative',
+        ig:{ txt:"Du Sénégal au Vietnam, ils enseignent le français. Cette semaine, la parole est à Hanoï.", jaime:'312', com:'27', quand:'hier' },
+        li:{ quand:'1 sem.', txt:"Nos associations membres sont présentes sur cinq continents. Coup de projecteur sur le réseau asiatique.", reacts:'208', rep:'23 republications' },
+        fb:{ quand:'1 j', txt:"Le congrès approche : les inscriptions sont ouvertes pour les associations membres.", reacts:'174', com:'32 commentaires', part:'18 partages' }
+      }
+    ];
+
+    function av(n, petit){
+      var p = POSTS[n];
+      return '<span class="av ' + p.teinte + (petit ? ' av--sm' : '') + '">' + p.ini + '</span>';
+    }
+    function media(n){
+      return '<div class="media"><img src="' + IMG[n] + '" alt="' + ALT[n] + '" loading="lazy" decoding="async"></div>';
+    }
+
+    function vueIG(n){
+      var p = POSTS[n], d = p.ig;
+      return '<div class="ui ui--ig">' + statut() +
+        '<div class="apptop"><span class="logo">Instagram</span><span class="ic">' + ic('coeur') + ic('avion') + '</span></div>' +
+        '<div class="fcard">' +
+          '<div class="ptop">' + av(n) + '<span><span class="pname">' + p.pseudo + '</span>' +
+            '<span class="psub">' + p.nom + '</span></span><span class="more">' + ic('points') + '</span></div>' +
+          media(n) +
+          '<div class="acts">' + ic('coeur') + ic('bulle') + ic('avion') + '<span class="right">' + ic('signet') + '</span></div>' +
+          '<div class="capt"><b>' + d.jaime + ' j\'aime</b><br><b>' + p.pseudo + '</b> ' + d.txt +
+            '<em>Voir les ' + d.com + ' commentaires · ' + d.quand + '</em></div>' +
+        '</div>' +
+        tab(['maison','loupe','video','coeur','profil']) + '</div>';
+    }
+
+    function vueLI(n){
+      var p = POSTS[n], d = p.li;
+      return '<div class="ui ui--li">' + statut() +
+        '<div class="apptop">' + av(n, true) + '<span class="cherche">Rechercher</span>' + ic('bulle') + '</div>' +
+        '<div class="fcard">' +
+          '<div class="ptop">' + av(n) + '<span><span class="pname">' + p.nom + '</span>' +
+            '<span class="psub">' + p.liSous + '</span>' +
+            '<span class="psub">' + d.quand + ' · ' + ic('globe') + '</span></span>' +
+            '<span class="more">' + ic('points') + '</span></div>' +
+          '<div class="ptxt">' + d.txt + ' <span>… voir plus</span></div>' +
+          media(n) +
+          '<div class="reacts"><span class="puces"><b class="bleu">\u25B2</b><b class="rouge">♥</b></span>' +
+            '<span>' + d.reacts + '</span><span class="cnt">' + d.rep + '</span></div>' +
+          '<div class="barre"><span>' + ic('pouce') + 'J\'aime</span><span>' + ic('bulle') + 'Commenter</span>' +
+            '<span>' + ic('repost') + 'Republier</span><span>' + ic('avion') + 'Envoyer</span></div>' +
+        '</div>' +
+        tab(['maison','gens','plus','cloche','valise']) + '</div>';
+    }
+
+    function vueFB(n){
+      var p = POSTS[n], d = p.fb;
+      return '<div class="ui ui--fb">' + statut() +
+        '<div class="apptop"><span class="logo">facebook</span><span class="ic">' + ic('plus') + ic('loupe') + ic('bulle') + '</span></div>' +
+        '<div class="fcard">' +
+          '<div class="ptop">' + av(n) + '<span><span class="pname">' + p.nom + '</span>' +
+            '<span class="psub">' + p.fbSous + '</span>' +
+            '<span class="psub">' + d.quand + ' · ' + ic('globe') + '</span></span>' +
+            '<span class="more">' + ic('points') + '</span></div>' +
+          '<div class="ptxt">' + d.txt + '</div>' +
+          media(n) +
+          '<div class="reacts"><span class="puces"><b class="bleu">\u25B2</b><b class="rouge">♥</b></span>' +
+            '<span>' + d.reacts + '</span><span class="cnt">' + d.com + ' · ' + d.part + '</span></div>' +
+          '<div class="barre"><span>' + ic('pouce') + 'J\'aime</span><span>' + ic('bulle') + 'Commenter</span>' +
+            '<span>' + ic('avion') + 'Partager</span></div>' +
+        '</div>' +
+        tab(['maison','gens','boutique','cloche','menu']) + '</div>';
+    }
+
+    var vues = { ig:vueIG, li:vueLI, fb:vueFB };
+    var net = 'ig', i = 0, timer = null;
+
+    POSTS.forEach(function(_, n){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('role','tab');
+      b.setAttribute('aria-label','Publication ' + (n+1) + ' : ' + POSTS[n].nom);
+      b.addEventListener('click', function(){ montrer(n); relancer(); });
+      dotsBox.appendChild(b);
+    });
+    var dots = dotsBox.querySelectorAll('button');
+
+    function montrer(n){
+      i = n;
+      screen.innerHTML = vues[net](i);
+      dots.forEach(function(d, k){ d.setAttribute('aria-current', k === n ? 'true' : 'false'); });
+    }
+    function relancer(){
+      clearInterval(timer);
+      if (reduit) { return; }
+      timer = setInterval(function(){ montrer((i + 1) % POSTS.length); }, 5200);
+    }
+
+    Array.prototype.forEach.call(document.querySelectorAll('.switch button'), function(b){
+      b.addEventListener('click', function(){
+        net = b.dataset.net;
+        Array.prototype.forEach.call(document.querySelectorAll('.switch button'), function(o){
+          o.setAttribute('aria-selected', o === b ? 'true' : 'false');
+        });
+        montrer(i); relancer();
+      });
+    });
+
+    montrer(0);
+    relancer();
+  })();
+
+  /* ---------- Menu mobile ---------- */
+  (function(){
+    var b = document.getElementById('burger');
+    var m = document.getElementById('menu');
+    var f = document.getElementById('fermer');
+    if (!b || !m) { return; }
+
+    function ouvrir(oui){
+      m.hidden = !oui;
+      document.body.classList.toggle('bloque', oui);
+      b.setAttribute('aria-expanded', oui ? 'true' : 'false');
+      b.setAttribute('aria-label', oui ? 'Fermer le menu' : 'Ouvrir le menu');
+      if (oui) { m.focus(); } else { b.focus(); }
+    }
+
+    b.addEventListener('click', function(){ ouvrir(m.hidden); });
+    f.addEventListener('click', function(){ ouvrir(false); });
+    m.addEventListener('click', function(e){ if (e.target.closest('a')) { ouvrir(false); } });
+    addEventListener('keydown', function(e){ if (e.key === 'Escape' && !m.hidden) { ouvrir(false); } });
+    addEventListener('resize', function(){ if (innerWidth > 900 && !m.hidden) { ouvrir(false); } });
+  })();
+
+  /* ---------- Fil de lecture et barre du haut ---------- */
+  (function(){
+    var entete = document.querySelector('header');
+    var remplissage = document.getElementById('railFill');
+    var jauge = document.getElementById('jauge');
+    var points = Array.prototype.slice.call(document.querySelectorAll('.rail a'));
+    var sections = points.map(function(a){ return document.getElementById(a.dataset.cible); });
+    var attente = false;
+
+    function calcul(){
+      var haut = window.scrollY;
+      var total = document.documentElement.scrollHeight - window.innerHeight;
+      var part = total > 0 ? Math.min(1, Math.max(0, haut / total)) : 0;
+
+      entete.classList.toggle('pose', haut > 30);
+      if (remplissage) { remplissage.style.height = (part * 100) + '%'; }
+      if (jauge) { jauge.style.width = (part * 100) + '%'; }
+
+      var actif = 0;
+      sections.forEach(function(sec, k){
+        if (sec && sec.getBoundingClientRect().top <= window.innerHeight * 0.35) { actif = k; }
+      });
+      points.forEach(function(a, k){ a.setAttribute('aria-current', k === actif ? 'true' : 'false'); });
+      attente = false;
+    }
+
+    addEventListener('scroll', function(){
+      if (attente) { return; }
+      attente = true;
+      requestAnimationFrame(calcul);
+    }, { passive:true });
+    addEventListener('resize', calcul);
+    calcul();
+  })();
+
+  /* ---------- Chiffres qui montent ---------- */
+  (function(){
+    var cibles = document.querySelectorAll('.chiffre b');
+    if (!cibles.length) { return; }
+    function ecrire(el, v){
+      el.textContent = (el.dataset.pre || '') + v + (el.dataset.suf || '');
+    }
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) { return; }
+    var io = new IntersectionObserver(function(entrees){
+      entrees.forEach(function(e){
+        if (!e.isIntersecting) { return; }
+        io.unobserve(e.target);
+        var el = e.target, fin = parseInt(el.dataset.val, 10), debut = performance.now();
+        (function pas(t){
+          var k = Math.min(1, (t - debut) / 900);
+          ecrire(el, Math.round(fin * (1 - Math.pow(1 - k, 3))));
+          if (k < 1) { requestAnimationFrame(pas); }
+        })(debut);
+      });
+    }, { threshold:.5 });
+    Array.prototype.forEach.call(cibles, function(el){ ecrire(el, 0); io.observe(el); });
+  })();
+
+  /* ---------- Image distante bloquée : on garde le fond ---------- */
+  window.addEventListener('error', function(e){
+    var t = e.target;
+    if (t && t.tagName === 'IMG') { t.style.display = 'none'; }
+  }, true);
+
+  /* ---------- Formulaire ---------- */
+  /* GitHub Pages : colle ici la clé gratuite obtenue sur web3forms.com pour recevoir
+     les messages par e-mail. Laissée vide, la page retombe sur Netlify Forms. */
+  var CLE_WEB3FORMS = '9cb93003-a347-4f69-bf4e-09caaac1bb44';
+
+  (function(){
+    var form = document.getElementById('contactForm');
+    var sent = document.getElementById('sent');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+
+      var btn = form.querySelector('button[type="submit"]');
+      var libelle = btn.textContent;
+      btn.disabled = true; btn.textContent = 'Envoi…';
+      sent.className = 'sent';
+
+      var cible = CLE_WEB3FORMS ? 'https://api.web3forms.com/submit' : '/';
+      var options;
+      if (CLE_WEB3FORMS) {
+        var champs = {};
+        new FormData(form).forEach(function(v, k){ if (k !== 'form-name') { champs[k] = v; } });
+        champs.access_key = CLE_WEB3FORMS;
+        champs.subject = 'Nouveau message depuis jdsocial.fr';
+        options = {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(champs)
+        };
+      } else {
+        options = {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        };
+      }
+
+      fetch(cible, options)
+      .then(function(r){
+        if (!r.ok) { throw new Error(r.status); }
+        form.reset();
+        sent.textContent = 'Merci, votre message est bien parti. Je vous réponds sous 48 h ouvrées.';
+        sent.className = 'sent on';
+      })
+      .catch(function(){
+        sent.textContent = "L'envoi n'a pas abouti. Écrivez-moi directement à juliedaniaud.pro@gmail.com.";
+        sent.className = 'sent on sent--err';
+      })
+      .finally(function(){ btn.disabled = false; btn.textContent = libelle; });
+    });
+  })();
+
+  /* ---------- Prise de rendez-vous (Cal.com) ---------- */
+  (function(){
+    var CAL_LIEN = 'julie-daniaud';
+    var charge = false;
+
+    function chargerCal(){
+      if (charge) { return; }
+      charge = true;
+      (function (C, A, L) { var p = function (a, ar) { a.q.push(ar); }; var d = C.document;
+        C.Cal = C.Cal || function () { var cal = C.Cal; var ar = arguments;
+          if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || [];
+            d.head.appendChild(d.createElement('script')).src = A; cal.loaded = true; }
+          if (ar[0] === L) { var api = function () { p(api, arguments); };
+            var ns = ar[1]; api.q = api.q || [];
+            typeof ns === 'string' ? (cal.ns[ns] = api) && p(api, ar) : p(cal, ar); return; }
+          p(cal, ar); };
+      })(window, 'https://app.cal.com/embed/embed.js', 'init');
+      Cal('init', { origin: 'https://cal.com' });
+      Cal('ui', { layout: 'month_view', hideEventTypeDetails: false });
+    }
+
+    Array.prototype.forEach.call(document.querySelectorAll('a[href="#contact"]'), function(a){
+      if (a.textContent.trim().toLowerCase().indexOf('rdv') === -1) { return; }
+      a.setAttribute('href', 'https://cal.com/' + CAL_LIEN);
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener');
+      a.addEventListener('click', function(e){
+        try { chargerCal(); Cal('modal', { calLink: CAL_LIEN }); e.preventDefault(); }
+        catch (err) { /* le lien s'ouvre normalement */ }
+      });
+    });
+  })();
+  /* ---------- Boutons magnétiques ---------- */
+  (function(){
+    if (!window.matchMedia('(pointer: fine)').matches) { return; }
+    Array.prototype.forEach.call(document.querySelectorAll('.btn'), function(b){
+      b.addEventListener('mousemove', function(e){
+        var r = b.getBoundingClientRect();
+        b.style.translate = ((e.clientX - r.left - r.width / 2) * 0.22) + 'px ' +
+                            ((e.clientY - r.top - r.height / 2) * 0.3) + 'px';
+      });
+      b.addEventListener('mouseleave', function(){ b.style.translate = '0 0'; });
+    });
+  })();
+
+  /* ---------- Réalisations : galerie qu'on fait glisser ---------- */
+  (function(){
+    var works = document.querySelector('.works');
+    if (!works) { return; }
+
+    var gal = document.createElement('div');
+    gal.className = 'gal';
+    works.parentNode.insertBefore(gal, works);
+    gal.appendChild(works);
+
+    var barre = document.createElement('div');
+    barre.className = 'galbar';
+    barre.innerHTML = '<button type="button" aria-label="Précédent">←</button>' +
+                      '<button type="button" aria-label="Suivant">→</button>' +
+                      '<div class="rail" aria-hidden="true"><i></i></div>';
+    gal.parentNode.insertBefore(barre, gal.nextSibling);
+
+    var prec = barre.children[0], suiv = barre.children[1], jauge = barre.querySelector('i');
+
+    function pas(){ return works.firstElementChild.getBoundingClientRect().width + 22; }
+    prec.addEventListener('click', function(){ gal.scrollBy({ left:-pas(), behavior:'smooth' }); });
+    suiv.addEventListener('click', function(){ gal.scrollBy({ left: pas(), behavior:'smooth' }); });
+
+    function etat(){
+      var max = gal.scrollWidth - gal.clientWidth;
+      jauge.style.width = Math.max(12, (gal.clientWidth / gal.scrollWidth) * 100) + '%';
+      jauge.style.marginLeft = (max > 0 ? (gal.scrollLeft / max) * (100 - parseFloat(jauge.style.width)) : 0) + '%';
+      prec.disabled = gal.scrollLeft < 8;
+      suiv.disabled = gal.scrollLeft > max - 8;
+    }
+    gal.addEventListener('scroll', etat, { passive:true });
+    addEventListener('resize', etat);
+    etat();
+
+    var actif = false, depart = 0, depuis = 0, bouge = 0;
+    gal.addEventListener('mousedown', function(e){
+      actif = true; bouge = 0; depart = e.pageX; depuis = gal.scrollLeft;
+    });
+    addEventListener('mouseup', function(){
+      actif = false;
+      setTimeout(function(){ gal.classList.remove('drag'); }, 0);
+    });
+    addEventListener('mousemove', function(e){
+      if (!actif) { return; }
+      var d = e.pageX - depart;
+      bouge += Math.abs(d);
+      if (Math.abs(d) > 4) { gal.classList.add('drag'); }
+      gal.scrollLeft = depuis - d;
+    });
+  })();
+
+</script>
+</body>
+</html>
