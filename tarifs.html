@@ -218,7 +218,7 @@
   .ligne p{flex:1 1 260px; font-size:15px; color:var(--ink-soft);}
   .ligne b{font-family:var(--serif); font-size:24px; font-weight:700; color:var(--green); white-space:nowrap;}
 
-  .faq{padding-block:clamp(46px,7vw,86px) 0;}
+  .faq{padding-block:clamp(46px,7vw,86px) clamp(46px,7vw,86px);}
   details{border:1.5px solid var(--ink); border-radius:20px; background:var(--paper);
     padding:16px 20px; margin-bottom:12px; box-shadow:3px 3px 0 var(--ink);}
   details[open]{background:var(--sage-pale);}
@@ -397,7 +397,7 @@
      "name": "Y a-t-il un engagement de durée ?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "L'accompagnement mensuel se cale sur trois mois minimum, le temps que la ligne éditoriale s'installe et que les premiers chiffres soient lisibles. Les missions ponctuelles n'engagent à rien au-delà de la mission."
+      "text": "L'accompagnement mensuel se programme sur 3 mois minimum, le temps que la ligne éditoriale s'installe et que les premiers chiffres soient lisibles. Les missions ponctuelles n'engagent à rien au-delà de la mission."
      }
     },
     {
@@ -413,7 +413,7 @@
      "name": "Le budget publicitaire est-il compris ?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Non. Les tarifs couvrent la conception et le pilotage des campagnes. Le budget versé à Meta ou LinkedIn est payé directement par vous, ce qui vous laisse la main dessus à tout moment."
+      "text": "Non. Les tarifs couvrent la conception et le pilotage des campagnes. Le budget versé aux plateformes publicitaires est payé directement par vous, ce qui vous laisse la main dessus à tout moment."
      }
     },
     {
@@ -445,7 +445,7 @@
    "itemListElement": [
     {
      "@type": "Offer",
-     "name": "Création de contenus",
+     "name": "Production de contenus",
      "description": "À partir de 450 € HT par mois : douze publications, visuels et textes, calendrier partagé.",
      "url": "https://jdsocial.fr/tarifs.html",
      "priceSpecification": {
@@ -457,7 +457,38 @@
      "priceCurrency": "EUR",
      "itemOffered": {
       "@type": "Service",
-      "name": "Création de contenus",
+      "name": "Production de contenus",
+      "provider": {
+       "@id": "https://jdsocial.fr/#organisation"
+      },
+      "areaServed": {
+       "@type": "AdministrativeArea",
+       "name": "Var"
+      }
+     },
+     "seller": {
+      "@id": "https://jdsocial.fr/#organisation"
+     },
+     "eligibleRegion": {
+      "@type": "Country",
+      "name": "France"
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Stratégie complète pour dynamiser sa présence",
+     "description": "À partir de 980 € HT la mission : audit, benchmark, cibles, ligne éditoriale et plan éditorial sur 3 mois.",
+     "url": "https://jdsocial.fr/tarifs.html",
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "priceCurrency": "EUR",
+      "minPrice": 980,
+      "valueAddedTaxIncluded": false
+     },
+     "priceCurrency": "EUR",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Stratégie complète pour dynamiser sa présence",
       "provider": {
        "@id": "https://jdsocial.fr/#organisation"
       },
@@ -477,12 +508,12 @@
     {
      "@type": "Offer",
      "name": "Accompagnement mensuel",
-     "description": "À partir de 690 € HT par mois : ligne éditoriale, création et publication, animation, bilan chiffré.",
+     "description": "À partir de 790 € HT par mois : ligne éditoriale, création et publication, animation, bilan chiffré.",
      "url": "https://jdsocial.fr/tarifs.html",
      "priceSpecification": {
       "@type": "PriceSpecification",
       "priceCurrency": "EUR",
-      "minPrice": 690,
+      "minPrice": 790,
       "valueAddedTaxIncluded": false
      },
      "priceCurrency": "EUR",
@@ -507,44 +538,13 @@
     },
     {
      "@type": "Offer",
-     "name": "Stratégie de réseaux sociaux",
-     "description": "À partir de 980 € HT la mission : audit, benchmark, cibles, ligne éditoriale et plan éditorial sur trois mois.",
-     "url": "https://jdsocial.fr/tarifs.html",
-     "priceSpecification": {
-      "@type": "PriceSpecification",
-      "priceCurrency": "EUR",
-      "minPrice": 980,
-      "valueAddedTaxIncluded": false
-     },
-     "priceCurrency": "EUR",
-     "itemOffered": {
-      "@type": "Service",
-      "name": "Stratégie de réseaux sociaux",
-      "provider": {
-       "@id": "https://jdsocial.fr/#organisation"
-      },
-      "areaServed": {
-       "@type": "AdministrativeArea",
-       "name": "Var"
-      }
-     },
-     "seller": {
-      "@id": "https://jdsocial.fr/#organisation"
-     },
-     "eligibleRegion": {
-      "@type": "Country",
-      "name": "France"
-     }
-    },
-    {
-     "@type": "Offer",
      "name": "Audit des réseaux sociaux",
-     "description": "À partir de 540 € HT : pages, ligne éditoriale, campagnes et benchmark, dans un document utilisable.",
+     "description": "À partir de 550 € HT : pages, ligne éditoriale, campagnes et benchmark, dans un document utilisable.",
      "url": "https://jdsocial.fr/tarifs.html",
      "priceSpecification": {
       "@type": "PriceSpecification",
       "priceCurrency": "EUR",
-      "minPrice": 540,
+      "minPrice": 550,
       "valueAddedTaxIncluded": false
      },
      "priceCurrency": "EUR",
@@ -570,12 +570,12 @@
     {
      "@type": "Offer",
      "name": "Campagne publicitaire",
-     "description": "À partir de 360 € HT : visuels, annonces, ciblage, optimisation et bilan. Budget média en supplément.",
+     "description": "À partir de 650 € HT : annonces, visuels, ciblage, optimisation et bilan. Budget média en supplément.",
      "url": "https://jdsocial.fr/tarifs.html",
      "priceSpecification": {
       "@type": "PriceSpecification",
       "priceCurrency": "EUR",
-      "minPrice": 360,
+      "minPrice": 650,
       "valueAddedTaxIncluded": false
      },
      "priceCurrency": "EUR",
@@ -632,12 +632,12 @@
     {
      "@type": "Offer",
      "name": "Renfort ponctuel",
-     "description": "À partir de 320 € HT la journée, pour un lancement, un événement ou un congé à couvrir.",
+     "description": "À partir de 275 € HT la journée, pour un lancement, un événement ou un congé à couvrir.",
      "url": "https://jdsocial.fr/tarifs.html",
      "priceSpecification": {
       "@type": "PriceSpecification",
       "priceCurrency": "EUR",
-      "minPrice": 320,
+      "minPrice": 275,
       "valueAddedTaxIncluded": false
      },
      "priceCurrency": "EUR",
@@ -728,14 +728,14 @@
       <a href="/">Accueil</a><span class="sep">/</span><span aria-current="page">Tarifs</span>
     </nav>
     <h1>Tarifs</h1>
-    <p class="chapo">Chaque structure a ses contraintes, son rythme et ses moyens. Voici les formats de travail les plus courants et le budget à partir duquel ils démarrent, pour que vous sachiez où vous mettez les pieds avant même de me contacter. Les prestations et la zone couverte sont détaillées sur la page <a href="/community-manager-toulon.html">community manager à Toulon et dans le Var</a>.</p>
+    <p class="chapo">Chaque structure a ses contraintes, son rythme et ses moyens. Voici les formats d'accompagnement les plus courants et le budget à partir duquel ils démarrent, pour que vous sachiez où vous mettez les pieds avant même de me contacter. Les prestations sont détaillées sur la page <a href="/#savoirfaire">ce que je sais faire</a> et sur la page <a href="/community-manager-toulon.html">community manager à Toulon</a>.</p>
   </div>
 </div>
 
 <div class="wrap">
   <div class="offres">
     <article class="offre">
-      <h2>Contenus</h2>
+      <h2>Production de contenus</h2>
       <p class="prix"><small>À partir de</small>450 € <span>HT / mois</span></p>
       <p>Vous avez la stratégie, il vous manque le temps de produire. Je m'occupe des contenus, vous gardez la main sur le reste.</p>
       <ul class="inclus">
@@ -749,29 +749,29 @@
 
     <article class="offre offre--phare">
       <span class="marque">Le plus demandé</span>
-      <h2>Accompagnement mensuel</h2>
-      <p class="prix"><small>À partir de</small>690 € <span>HT / mois</span></p>
-      <p>La gestion complète de vos réseaux, de la ligne éditoriale au bilan chiffré. C'est le format qui donne les meilleurs résultats dans la durée.</p>
-      <ul class="inclus">
-        <li>Ligne éditoriale et calendrier mensuel</li>
-        <li>Création et publication des contenus</li>
-        <li>Animation de la communauté et modération</li>
-        <li>Bilan chiffré et ajustements</li>
-        <li>Un point de suivi par mois</li>
-      </ul>
-      <a class="btn" href="/#contact">Prendre RDV</a>
-    </article>
-
-    <article class="offre">
-      <h2>Stratégie</h2>
+      <h2>Stratégie complète pour dynamiser sa présence</h2>
       <p class="prix"><small>À partir de</small>980 € <span>HT / mission</span></p>
       <p>Une mission ponctuelle pour poser les bases, que vous exécutiez ensuite en interne ou avec moi.</p>
       <ul class="inclus">
         <li>Audit de vos pages et de vos campagnes</li>
         <li>Benchmark de votre secteur</li>
         <li>Cibles, ton et ligne éditoriale</li>
-        <li>Plan éditorial sur trois mois</li>
+        <li>Plan éditorial sur 3 mois</li>
         <li>Restitution et recommandations écrites</li>
+      </ul>
+      <a class="btn" href="/#contact">En parler</a>
+    </article>
+
+    <article class="offre">
+      <h2>Accompagnement mensuel</h2>
+      <p class="prix"><small>À partir de</small>790 € <span>HT / mois</span></p>
+      <p>La gestion complète de vos réseaux, de la ligne éditoriale au bilan chiffré. Idéal pour les organisations qui veulent confier leur présence sociale entièrement à un expert.</p>
+      <ul class="inclus">
+        <li>Ligne éditoriale et calendrier mensuel</li>
+        <li>Création et publication des contenus</li>
+        <li>Animation de la communauté et modération</li>
+        <li>Bilan chiffré et ajustements</li>
+        <li>Un point de suivi par mois</li>
       </ul>
       <a class="btn" href="/#contact">En parler</a>
     </article>
@@ -784,12 +784,12 @@
     <div class="ligne">
       <h3>Audit de vos réseaux</h3>
       <p>Pages, ligne éditoriale, campagnes et benchmark, dans un document directement utilisable.</p>
-      <b>à partir de 540 € HT</b>
+      <b>à partir de 550 € HT</b>
     </div>
     <div class="ligne">
       <h3>Campagne publicitaire</h3>
-      <p>Visuels, annonces, ciblage, optimisation et bilan. Budget média en supplément.</p>
-      <b>à partir de 360 € HT</b>
+      <p>Annonces, visuels, ciblage, optimisation et bilan. Budget média en supplément.</p>
+      <b>à partir de 650 € HT</b>
     </div>
     <div class="ligne">
       <h3>Formation à l'autonomie</h3>
@@ -798,8 +798,8 @@
     </div>
     <div class="ligne">
       <h3>Renfort ponctuel</h3>
-      <p>Un lancement, un événement, un congé à couvrir. Facturation à la journée.</p>
-      <b>à partir de 320 € HT la journée</b>
+      <p>Un lancement, un événement, un congé à couvrir…</p>
+      <b>à partir de 275 € HT la journée</b>
     </div>
   </section>
 </div>
@@ -810,7 +810,7 @@
 
     <details>
       <summary>Y a-t-il un engagement de durée ?</summary>
-      <p>L'accompagnement mensuel se cale sur trois mois minimum, le temps que la ligne éditoriale s'installe et que les premiers chiffres soient lisibles. Les missions ponctuelles n'engagent à rien au-delà de la mission.</p>
+      <p>L'accompagnement mensuel se programme sur 3 mois minimum, le temps que la ligne éditoriale s'installe et que les premiers chiffres soient lisibles. Les missions ponctuelles n'engagent à rien au-delà de la mission.</p>
     </details>
 
     <details>
@@ -820,7 +820,7 @@
 
     <details>
       <summary>Le budget publicitaire est-il compris ?</summary>
-      <p>Non. Les tarifs couvrent la conception et le pilotage des campagnes. Le budget versé à Meta ou LinkedIn est payé directement par vous, ce qui vous laisse la main dessus à tout moment.</p>
+      <p>Non. Les tarifs couvrent la conception et le pilotage des campagnes. Le budget versé aux plateformes publicitaires est payé directement par vous, ce qui vous laisse la main dessus à tout moment.</p>
     </details>
 
     <details>
@@ -837,7 +837,7 @@
 
     <div class="final">
       <h2>On en discute ?</h2>
-      <p>Trente minutes suffisent à savoir ce qui est réaliste pour votre structure, et à quel rythme. Sur place à Toulon et dans le Var, ou à distance. Sans engagement.</p>
+      <p>30 minutes suffisent à savoir ce qui est réaliste pour votre structure, et à quel rythme. Sur place à Toulon et dans le Var, ou à distance partout en France. Sans engagement.</p>
       <a class="btn" href="/#contact">Prendre RDV</a>
     </div>
   </div>
